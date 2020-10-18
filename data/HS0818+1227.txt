@@ -1,0 +1,53 @@
+HS0818+1227
+A	B	G
+0.000	-1.508	-1.661
+0.000	0.003	0.003
+0.000	2.068	1.472
+0.000	0.003	0.003
+#F160W	16.99±0.01	19.16±0.03	16.91±0.06
+#F555W	19.05±0.10	21.12±0.22	21.08±0.10
+#F814W	18.69±0.55	20.80±0.00	19.07±0.22
+#---CASTLES
+#
+#HS0818+1227	F160W	2.17±0.031	
+#
+#4.5. HS0818+1227HS0818+1227 was discovered by Hagen & Reimers (2000);it consists of  two lensed  imagesA,Bseparated  by 2.′′6,  withzs=3.115  andzl=0.39.  ImageBin  this  case  is∼2magfainter thanA. We scaled the continuum-subtractedBspectrumto match the emission-line peaks inA(Figure16). TheAandBemission-line profiles are very similar to each other and do notshow significant differences in the BLR.Figure17shows  the B−A magnitude  differences  we  cal-culated from the continuum (solid black squares) and from thecores of the emission lines (solid black triangles) integrating ourMMT spectra. TheB−Amagnitude differences correspondingto the NELs (Table10) will define a zero microlensing baseline of
+#
+#〈mB−mA〉=2.34±0.03 mag.
+#
+#The average of CASTLESbroadband  data  
+#
+#(〈mB−mA〉=2.12±0.03  mag)
+#
+#shows  anoffset of 0.22 mag with respect to this baseline. Note, however,that the significance of this offset is dominated by the F555Wdata taken by CASTLES. According to Section3.5, part of thisoffset (0.1 mag) may arise from intrinsic variability.Our  continuum  data  agree  with  Hagen  &  Reimers  (2000),but do not match CASTLES (Table2), especially in the reddestpart. This discrepancy is due to the lens galaxy continuum. Weestimate, using the integrated broadband magnitudes obtainedby  CASTLES  for  the  lens  galaxy,  that  the  contamination  is∼40% of the lens galaxy flux.Considering the emission lines, our results indicate negligibledust extinction and possible evidence of micr
+#
+#
+#---Motta12
+#R-magnitudes of 18.6 19.8 respectively
+#
+#identical emission line spectra witha flux ratio fA/fB=8
+#
+# redshifts are identical: withinthe accuracy of measurements:z= 3.115±0.001; the meanvelocity difference between A and B is≤220km/s. From spec-trophotometry of A and B, we findRA= 18.6 andRB= 19.8respectively. Comparing the continuum of B with a spectrum ofA downscaled by a factor of 8 shows that B contains a contri-bution from a red galaxy G (Fig. 3). While, as discussed above,a separation is difficult in theRimage, the two components canbe separated spectroscopically. Ass
+#---https://ui.adsabs.harvard.edu/#abs/2000A&A...357L..29H/abstract
+#
+#A	125.41231,12.29164	Z= 18.77+-0.03
+#B	125.41184,12.29218	Z= 18.85+-0.05
+#---SDSS DR14
+#
+#HS0818+1227  0.39  3.12  DoubleR1= 0.61,R2= 2.22
+#---https://arxiv.org/pdf/astro-ph/0306096.pdf
+#
+#B0818+122[Fig. 11] discovery: Hagen & Reimers (2000).A chain of galaxies to the NE contribute a large externalshear. The fainter image is very close to the main lensinggalaxy, and about the same brightness. Overall, prospectsappear good
+#---https://arxiv.org/pdf/astro-ph/0601370.pdf
+#HS0818+12270.145±0.0100.393.115−1.921±0.006Hagen & Reimers (2
+#---https://arxiv.org/pdf/0909.2168.pdf
+#
+#NameSamplezlzsθelogMSal∗θEin(arcsec)(M⊙)(arcsec)
+#HS0818+1227CASTLES0.3903.1150.62±0.0511.221.37
+#---https://arxiv.org/pdf/1309.5408.pdf
+#The two-image lensHS0818+1227requires spe-cial treatment as we use an isolated PSF of imageB1030+071 to fit the quasar image in the H band. Inthe I and V bands, the quasar images are used forfitting.  Iteration as it is used for enhancing PSFs ofother lenses does not provide better model fits for thelens because of the large separation between imagesand lens.  The image separation is 2.56′′.  Hence thereduction process is further simplified by masking. Sinceits discovery by Hagen & Reimers (2000) no furtherinsights into the environmental properties of the lens areavailable. Nevertheless Hagen & Reimers (2000) founda galaxy 5′′north of the lens which appears to have thesame redshift ofz= 0.39, which explains the externalshear required by our lens model.  A chain of galaxiesat a distance of 10′′north-east could also be associatedwith the lens galaxy.
+#
+#Previous studies based on thesurface brightness distribution use the Petrosian radius(or a given number of Petrosian radii) to define the to-tal brightness. In our case, we redefinecand take therespective radii of our cumulative stellar mass and totalmass profiles instead — 100% corresponding to enclosedmasses at 2Rlens(except for Q0957 and HS0818 where itis 1.5Rlens). In Fig. 10 we show concentration versus red-shift in the left-hand panel with no obvious correlationand the frequencies per concentration bin in the right-hand panel. Note that defining the concentration valuesusingREininstead ofRlenswill change the concentrationvalues slightly, but even forRlens/REin= 1.5 we obtainchanges in the lens mass concentration of less than∼30%and only for lenses with high concentrations
+#
+#https://arxiv.org/pdf/1102.3433.pdf
+#---https://arxiv.org/pdf/1102.3433.pdf

@@ -1,0 +1,18 @@
+RXJ1131-1231
+A	B	C	D	G
+0.0	0.024	-0.563	-3.122	-1.898
+0.0	0.002	0.003	0.010	0.015
+0.0	1.201	-1.062	0.884	0.559
+0.0	0.002	0.003	0.010	0.015
+#V	17.97±0.09	17.52±0.10	18.59±0.11	20.11±0.14	18.4±0.30
+
+#A	B	C	D	E	G	G1	MainSource
+#Position	RA(arcsec)	0.588±0.003	0.618±0.003	0	-2.517±0.003	-1.345±0.004	-1.444±0.008	-1.444±0.008	-0.983±0.006
+#Dec(arcsec)	1.120±0.003	2.307±0.003	0	1.998±0.003	2.259±0.004	1.706±0.006	1.706±0.006	1.604±0.006
+#F160W	15.97±0.02	16.22±0.04	17.02±0.02	18.76±0.03	20.88±0.08	16.13±0.24	17.29±0.14	15.86±0.09
+#F555W	18.20±0.14	18.25±0.03	18.51±0.05	20.02±0.12	24.47±0.22	19.63±0.06	21.72±0.53	20.86±457.00
+#F814W	17.77±0.12	18.11±0.12	18.19±0.02	19.81±0.06	22.73±0.03	17.88±0.15	19.39±0.35	17.93±0.14
+#
+#
+#ALMA view of RX J1131−1231: Sub-kpc CO (2-1) mapping of amolecular disk in a lensed star-forming quasar host galaxy
+#http://vizier.u-strasbg.fr/viz-bin/VizieR-4?-ref=VIZ59df3f2a9003&-to=4&-from=-3&-this=-3&%2F%2Fsource=I%2F345%2Fgaia2&%2F%2Ftables=I%2F345%2Fgaia2&-out.max=50&%2F%2FCDSportal=http%3A%2F%2Fcdsportal.u-strasbg.fr%2FStoreVizierData.html&-out.form=HTML+Table&-out.add=_r&-out.add=_p&-out.add=_x%2C_y&%2F%2Foutaddvalue=default&-oc.form=sexa&-nav=cat%3AI%2F345%26tab%3A%7BI%2F345%2Fgaia2%7D%26key%3Asource%3DI%2F345%2Fgaia2%26pos%3A172.9644%09-12.5329%28+++5+arcsec+J2000%29%26HTTPPRM%3A%26-ref%3DVIZ59df3f2a9003%26-out.src%3DI%2F345%2Fgaia2%26Clear%3D+Clear%26-c%3D172.9644%09-12.5329%26-c.r%3D++5%26-out.orig%3Dorig%26-out%3Dra%26-out%3Ddec%26-out%3Dparallax%26-out%3Dparallax_error%26-out%3Dpmra%26-out%3Dpmra_error%26-out%3Dpmdec%26-out%3Dpmdec_error%26-out%3Dastrometric_excess_noise%26-out%3Dastrometric_excess_noise_sig%26-out%3Dduplicated_source%26-out%3Dphot_g_mean_mag%26-out%3Dbp_rp%26-out%3Dphot_variable_flag%26-out%3Dl%26-out%3Db%26-meta.ucd%3D2%26-meta%3D1%26-meta.foot%3D1%26-usenav%3D1%26-bmark%3DGET%26-out.add%3D_r%26-out.add%3D_p%26-out.add%3D_x%2C_y%26-order%3DI%26-oc.form%3Dsexa%26-c.geom%3Dr%26-out.max%3D50%26-out.form%3DHTML+Table%26undefined%3DCDS%2C+France%26-c.eq%3DJ2000%26-c.u%3Darcsec%26&-c=172.9644%09-12.5329&-c.eq=J2000&-c.r=++5&-c.u=arcsec&-c.geom=r&-source=I%2F345%2Fgaia2&-order=I&-out.orig=orig&DR2Name=&-out=ra&RA_ICRS=&e_RA_ICRS=&-out=dec&DE_ICRS=&e_DE_ICRS=&SolID=&Source=&RandomI=&Epoch=&-out=parallax&Plx=&-out=parallax_error&e_Plx=&RPlx=&-out=pmra&pmRA=&-out=pmra_error&e_pmRA=&-out=pmdec&pmDE=&-out=pmdec_error&e_pmDE=&RADEcor=&RAPlxcor=&RApmRAcor=&RApmDEcor=&DEPlxcor=&DEpmRAcor=&DEpmDEcor=&PlxpmRAcor=&PlxpmDEcor=&pmRApmDEcor=&NAL=&NAC=&NgAL=&NbAL=&gofAL=&chi2AL=&-out=astrometric_excess_noise&epsi=&-out=astrometric_excess_noise_sig&sepsi=&Solved=&APF=&WAL=&pscol=&e_pscol=&fvarpi=&MatchObsA=&Nper=&amax=&type=&MatchObs=&-out=duplicated_source&Dup=&o_Gmag=&FG=&e_FG=&RFG=&-out=phot_g_mean_mag&Gmag=&e_Gmag=&o_BPmag=&FBP=&e_FBP=&RFBP=&BPmag=&e_BPmag=&o_RPmag=&FRP=&e_FRP=&RFRP=&RPmag=&e_RPmag=&E%28BR%2FRP%29=&Mode=&-out=bp_rp&BP-RP=&BP-G=&G-RP=&RV=&e_RV=&o_RV=&Tefftemp=&loggtemp=&%5BFe%2FH%5Dtemp=&-out=phot_variable_flag&Var=&GLON=&-out=b&GLAT=&ELON=&ELAT=&fPriam=&Teff=&b_Teff=&B_Teff=&AG=&b_AG=&B_AG=&E%28BP-RP%29=&b_E%28BP-RP%29=&B_E%28BP-RP%29=&fFLAME=&Rad=&b_Rad=&B_Rad=&Lum=&b_Lum=&B_Lum=&RAJ2000=&e_RAJ2000=&DEJ2000=&e_DEJ2000=&%2F%2Fnoneucd1p=on&-file=.&-meta.ucd=2&-meta=1&-meta.foot=1&-usenav=1&-bmark=GET

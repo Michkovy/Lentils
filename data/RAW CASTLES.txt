@@ -1,0 +1,1514 @@
+Template
+
+Name
+Observed feature name	A/B/C...	Image
+						G			Lens galaxy
+						
+RA [as]
+RA_error [as]
+Dec [as]
+Dec_error [as]
+Fluxes	Filter_n [mag]
+		Filter_n_error [mag]
+###################################################################################################################################
+
+Q0047-2808
+Observations	G	G1
+Position	RA(arcsec)	0	0.000±0.000
+Dec(arcsec)	0	0.000±0.000
+fluxes	F160W	17.85±0.09	17.55±0.08
+F555W	22.26±0.03	 
+F814W	20.05±0.02	 
+###################################################################################################################################
+
+###################################################################################################################################
+Here is a summary of HST01247+0352 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G
+Position	RA(arcsec)	0	-1.574±0.003	-0.699±0.003
+Dec(arcsec)	0	-1.485±0.009	-0.926±0.009
+fluxes	F814W	24.90±0.10	24.86±0.08	21.86±0.05
+F160W	23.45±0.51	24.29±1.05	19.23±0.04
+F606W	25.69±0.15	25.61±0.15	23.83±0.06
+
+Click on images for full size version.
+###################################################################################################################################
+HST01248+0351
+###################################################################################################################################
+Here is a summary of B0128+437 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Phillips00
+Observations	A	B	C	D
+Position	RA(arcsec)	0.000	0.098	0.520	0.108
+Dec(arcsec)	+0.000	+0.094	-0.172	-0.250
+fluxes	5GHz	18.9	9.5	10.1	9.2
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of PMNJ0134-0931 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	C	D	G
+Position	RA(arcsec)	0	-0.082±0.003	0.539±0.003	0.258±0.012	0.054±0.060
+Dec(arcsec)	0	-0.156±0.003	-0.415±0.003	0.205±0.008	0.015±0.032
+fluxes	F160W	15.25±0.03	16.56±0.02	17.26±0.02	19.34±0.11	18.44±0.79
+F555W	23.55±0.05	23.44±0.04	 	 	22.13±0.17
+F814W	19.52±0.01	19.99±0.01	23.45±0.06	25.49±0.24	19.31±0.08
+Data from Winn01
+Observations	A	B	C	D
+Position	RA(arcsec)	-0.53962±0.00120	-0.61880±0.00084	-0.44876±0.00148	0.0±0.00000
+Dec(arcsec)	0.41471±0.00151	0.26402±0.00158	0.38218±0.00069	0.0±0.0
+fluxes	5GHz	347.2	82.5	35.6	64.0
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of Q0142-100 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G
+Position	RA(arcsec)	0	2.145±0.003	1.764±0.003
+Dec(arcsec)	0	-0.613±0.003	-0.574±0.003
+fluxes	F160W	15.28±0.02	17.57±0.03	16.63±0.03
+F555W	16.89±0.07	19.13±0.03	20.81±0.02
+F675W	16.67±0.01	18.96±0.03	19.35±0.01
+F814W	16.62±0.07	18.71±0.10	18.72±0.03
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of QJ0158-4325 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G	Source
+Position	RA(arcsec)	0	-1.156±0.003	-0.780±0.016	-0.532±0.063
+Dec(arcsec)	0	-0.398±0.003	-0.234±0.006	-0.128±0.065
+fluxes	F160W	16.47±0.03	17.27±0.03	16.67±0.13	19.75±0.27
+F555W	18.10±0.13	18.91±0.17	20.36±0.18	22.96±0.22
+F814W	17.81±0.04	18.62±0.11	18.91±0.06	22.42±1.28
+Data from Morgan99
+Observations	A	B	G
+Position	RA(arcsec)	0.0	-1.172	-0.773
+Dec(arcsec)	0.000	-0.398	-0.228
+fluxes	R	17.338±0.001	18.487±0.004	19.440±0.028
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of B0218+357 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G
+Position	RA(arcsec)	0	0.307±0.003	0.178±0.011
+Dec(arcsec)	0	0.126±0.003	0.046±0.024
+fluxes	F160W	17.52±0.02	16.94±0.02	17.50±0.04
+F555W	23.28±0.02	21.11±0.01	21.95±0.04
+F814W	21.83±0.01	19.39±0.01	20.06±0.03
+Data from Castles/Extinct
+Observations	A	B	G
+Position	RA(arcsec)	0	0.307±0.000	0.178±0.000
+Dec(arcsec)	0	0.126±0.000	0.046±0.000
+fluxes	F300W	24.40±0.22	23.53±0.14	 
+F380W	24.46±0.10	22.83±0.21	 
+F439W	24.34±0.13	22.59±0.19	 
+F555W	23.57±0.05	21.09±0.01	21.92±0.05
+F675W	22.78±0.13	20.15±0.01	20.75±0.20
+F814W	22.01±0.07	19.42±0.02	20.05±0.00
+Data from Patnaik95
+Observations	A	A2	B	B2
+Position	RA(arcsec)	0.000±0.0001	0.00107±0.0001	0.30920±0.0001	0.31067±0.0001
+Dec(arcsec)	+0.00000±0.0001	+0.00087±0.0001	+0.12740±0.0001	+0.12740±0.0001
+fluxes	15GHz	621±17	379±5	172±3	104±3
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of HE0230-2130 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	C	D	G	G'
+Position	RA(arcsec)	0	0.698±0.003	1.198±0.005	-0.244±0.007	0.072±0.003	-0.212±0.025
+Dec(arcsec)	0	0.256±0.003	1.828±0.003	1.624±0.007	1.085±0.005	2.059±0.016
+fluxes	F814W	19.02±0.09	19.22±0.07	19.59±0.09	21.21±0.11	20.39±0.43	20.34±0.41
+F555W	19.58±0.12	19.80±0.09	20.45±0.20	21.83±0.15	23.24±0.69	22.35±0.36
+Data from Wisotzki99
+Observations	A	B	C	D	G
+Position	RA(arcsec)	0.00±0.00	0.68±0.01	1.17±0.02	-0.28±0.04	0.01±0.02
+Dec(arcsec)	0.00±0.00	0.27±0.01	1.80±0.02	1.98±0.04	1.13±0.02
+fluxes	I	18.49±0.02	18.43±0.02	19.00±0.02	19.74±0.05	19.63±0.04
+B	19.27±0.02	19.27±0.02	20.06±0.02	21.87±0.05	 
+R	18.83±0.02	18.89±0.02	19.45±0.02	20.42±0.05	20.62±0.04
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of SDSS0246-0825 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G	G2	G3
+Position	RA(arcsec)	0	-0.899±0.003	-0.285±0.003	1.033±0.003	1.033±0.003
+Dec(arcsec)	0	0.624±0.003	0.475±0.003	1.747±0.003	1.747±0.003
+fluxes	F160W	16.74±0.02	18.11±0.03	18.42±0.22	19.08±0.18	19.89±0.22
+F555W	18.42±0.01	19.22±0.02	23.21±0.29	21.18±0.02	24.66±0.00
+F814W	17.22±0.03	18.74±0.07	20.82±0.04	18.54±0.02	22.12±0.00
+
+Click on images for full size version.
+###################################################################################################################################
+
+
+Here is a summary of CFRS03.1077 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	G	G1	S1	S2
+Position	RA(arcsec)	0.000±0.000	0.000±0.000	1.605±0.000	-1.758±0.000
+Dec(arcsec)	0.000±0.000	0.000±0.000	0.578±0.000	2.552±0.000
+fluxes	F160W	18.69±1.96	18.81±0.22	22.48±0.09	21.57±0.06
+F555W	23.08±0.15	30.73±0.00	26.72±0.19	26.85±0.73
+F814W	20.15±0.06	22.48±0.22	25.23±0.09	25.02±0.11
+Data from Crampton02
+Observations	G
+Position	RA(arcsec)	0.0±0.0
+Dec(arcsec)	0.0±0.0
+fluxes	I	20.36±0.05
+V	22.49±0.15
+
+Click on images for full size version
+###################################################################################################################################
+Here is a summary of J0332-2756 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Blakeslee04
+Observations	A	B	C	D	E	F	G
+Position	RA(arcsec)	-1.460±0.010	-1.650±0.010	-0.790±0.010	-0.300±0.010	0.480±0.010	0.610±0.010	0.000±0.001
+Dec(arcsec)	0.970±0.010	0.240±0.010	-1.600±0.010	-2.060±0.010	0.330±0.010	0.200±0.010	0.000±0.001
+fluxes	F606W	 	 	 	 	 	 	20.74±0.06
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of MG0414+0534 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A1	A2	B	C	G	X
+Position	RA(arcsec)	0.600±0.003	0.732±0.003	0	-1.342±0.003	-0.472±0.003	-0.857±0.011
+Dec(arcsec)	-1.942±0.003	-1.549±0.003	0	-1.650±0.003	-1.277±0.003	0.180±0.009
+fluxes	F160W	15.54±0.01	15.87±0.01	16.56±0.01	17.41±0.01	17.54±0.02	20.12±0.32
+F110W	17.59±0.04	18.08±0.01	18.54±0.01	19.37±0.01	19.21±0.01	 
+F205W	14.59±0.01	14.79±0.02	15.63±0.04	16.49±0.01	16.70±0.11	 
+F555W	25.53±1.26	26.69±0.22	26.08±2.07	26.68±0.09	24.17±0.08	 
+F675W	22.61±0.02	23.80±0.02	23.34±0.03	24.17±0.04	22.58±0.13	24.63±0.30
+F814W	20.43±0.06	21.36±0.06	21.24±0.06	22.10±0.07	20.91±0.04	23.35±0.21
+Data from Katz95
+Observations	A1	A2	B	C
+Position	RA(arcsec)	0.5876±0.0003	0.7208±0.0003	0.000±0.0	-1.3608±0.0003
+Dec(arcsec)	-1.9341±0.0003	-1.5298±0.0003	0.00±0.0	-1.6348±0.0003
+fluxes	22GHz	117±6	103±5	46±3	17±2
+15GHz	162±6	142±6	64±3	23±1
+5GHz	401±8	362±8	156±4	58±2
+8.4GHz	242±1	217±1	93±1	37±1
+
+Click on images for full size version.
+###################################################################################################################################
+###################################################################################################################################
+Here is a summary of B0445+123 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G	G'
+Position	RA(arcsec)	0	1.157±0.005	0.930±0.003	2.397±0.004
+Dec(arcsec)	0	0.631±0.007	0.360±0.004	0.362±0.006
+fluxes	F160W	20.15±0.06	21.59±0.01	18.06±0.12	21.66±0.38
+F555W	24.85±0.20	26.75±0.12	23.85±0.04	27.30±0.81
+F814W	23.06±0.01	24.49±0.98	20.60±0.05	25.19±0.22
+
+Click on images for full size version.
+###################################################################################################################################
+
+###################################################################################################################################
+Here is a summary of B0631+519 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	L1	L2
+Position	RA(arcsec)	0	-0.308±0.000
+Dec(arcsec)	0	0.800±0.000
+fluxes	F160W	18.00±0.07	21.27±0.22
+F555W	23.09±0.05	22.88±0.06
+F814W	20.23±0.03	22.31±0.03
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of B0712+472 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	C	D	G	Source
+Position	RA(arcsec)	-0.795±0.003	-0.747±0.003	0.013±0.004	0.391±0.006	0	-0.092±0.004
+Dec(arcsec)	-0.156±0.003	-0.292±0.006	-0.804±0.003	0.307±0.003	0	-0.145±0.005
+fluxes	F160W	20.46±0.04	21.08±0.01	21.05±0.01	21.90±0.13	17.16±0.07	20.54±0.06
+F555W	24.24±0.18	25.66±0.07	26.30±0.16	26.67±0.80	21.75±0.06	26.23±0.38
+F814W	23.10±0.19	24.22±0.08	24.37±0.42	24.87±0.22	19.56±0.04	24.36±0.12
+Data from Jackson98
+Observations	A	B	C	D
+Position	RA(arcsec)	0.0±0.010	0.051±0.010	0.806±0.010	1.163±0.010
+Dec(arcsec)	0.0±0.010	-0.160±0.010	-0.670±0.010	0.460±0.010
+fluxes	5GHz	10.5±1.1	8.5±0.85	4.7±0.47	0.9±0.09
+15GHz	15.6±0.78	11.6±0.58	5.9±0.30	1.1±0.06
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of B0739+366 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G
+Position	RA(arcsec)	0.000±0.000	0.222±0.004	0.166±0.010
+Dec(arcsec)	0.000±0.000	-0.485±0.004	-0.387±0.019
+fluxes	F160W	18.79±0.01	21.09±0.06	18.98±0.51
+F814W	25.36±0.34	27.82±0.67	21.91±0.04
+Data from Marlow01
+Observations	A	B
+Position	RA(arcsec)	0.0±0.0001	0.2217±0.0001
+Dec(arcsec)	0.0±0.0001	-0.4910±0.0001
+fluxes	5GHz	26.8±2.68	4.9±0.49
+F160W	19.0	21.7
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of SDSS0746+4403 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Inada06
+Observations	A	B	G
+Position	RA(arcsec)	0.000±0.003	-0.933±0.004	-0.597±0.041
+Dec(arcsec)	+0.000±0.006	+0.541±0.004	+0.201±0.041
+fluxes	I	19.08±0.01	19.11±0.01	19.62±0.19
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of MG0751+2716 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	G	Source
+Position	RA(arcsec)	0	-0.634±0.021
+Dec(arcsec)	0	-0.225±0.026
+fluxes	F160W	18.87±0.16	21.66±0.25
+F555W	23.24±0.11	25.10±0.25
+F814W	21.26±0.03	23.72±0.05
+
+Click on images for full size version.
+###################################################################################################################################
+
+###################################################################################################################################
+Here is a summary of HS0810+2554 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	C	D	G
+Position	RA(arcsec)	0.000±0.000	0.087±0.003	0.774±0.003	0.610±0.003	0.451±0.012
+Dec(arcsec)	0.000±0.000	-0.163±0.003	-0.257±0.003	0.579±0.003	0.143±0.005
+fluxes	F160W	14.20±0.02	14.81±0.02	15.64±0.03	16.96±0.04	15.11±0.11
+F555W	16.91±0.06	17.69±0.16	18.07±0.17	19.56±0.46	18.20±0.33
+F814W	15.63±0.09	16.48±0.33	17.29±0.29	18.61±0.41	16.63±0.81
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of Q1120+0195 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+
+Click on images for full size version.
+
+Original data:
+UM425 H
+
+Cleaned data:
+UM425 H
+
+This page last updated Mon Oct 26 19:54:42 EDT 2015. 
+###################################################################################################################################
+ere is a summary of APM08279+5255 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	C
+Position	RA(arcsec)	0	-0.199±0.003	-0.100±0.003
+Dec(arcsec)	0	-0.327±0.003	-0.105±0.003
+fluxes	F160W	13.36±0.01	13.64±0.01	15.11±0.03
+F110W	14.40±0.06	14.69±0.07	16.30±0.07
+F205W	12.91±0.05	13.19±0.04	14.59±0.09
+F555W	16.96±0.01	17.74±0.03	18.70±0.03
+F814W	15.25±0.02	15.64±0.01	16.93±0.03
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of B0850+054 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	G	X
+Position	RA(arcsec)	0	-0.441±0.004	-1.017±0.047
+Dec(arcsec)	0	0.328±0.018	0.464±0.079
+fluxes	F160W	23.71±0.10	19.30±0.07	23.38±0.09
+F555W	25.80±0.38	23.82±0.01	 
+F814W	23.15±0.80	21.35±0.22	 
+Data from Biggs02
+Observations	A	B
+Position	RA(arcsec)	+0.0000±0.0000	+0.1585±0.0010
+Dec(arcsec)	+0.0000±0.00000	-0.6602±0.0010
+fluxes	5GHz	55.1±1.7	9.0±0.30
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of SDSS0903+5028 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G	G1	G2	G3	G4	G'
+Position	RA(arcsec)	0	-2.439±0.000	-1.990±0.003	-1.990±0.003	-1.042±0.003	-1.087±0.008	-1.431±0.003	-1.990±0.000
+Dec(arcsec)	0	-1.459±0.000	-0.705±0.003	-0.705±0.003	-4.597±0.003	3.307±0.006	0.032±0.003	-0.705±0.000
+fluxes	F160W	17.01±0.01	17.58±0.02	17.88±0.09	17.90±0.10	19.02±0.07	19.46±0.06	20.08±0.17	 
+F555W	20.77±0.04	21.33±0.29	22.08±0.01	23.64±0.06	23.04±0.02	22.65±0.01	 	22.04±0.15
+F814W	19.02±0.01	19.58±0.21	19.93±0.01	21.75±0.02	21.08±0.01	21.01±0.01	 	19.49±0.02
+Data from Johnston03
+Observations	A	B	G
+Position	RA(arcsec)	0.000±0.07	-2.434±0.07	-1.976±0.07
+Dec(arcsec)	+0.000±0.07	-1.460±0.07	-0.680±0.07
+fluxes	r	19.99±0.01	20.78±0.03	19.59±0.02
+i	19.43±0.01	20.27±0.05	18.86±0.04
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of RXJ0911+0551 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	C	D	G	G'
+Position	RA(arcsec)	0	0.260±0.003	-0.018±0.003	-2.972±0.003	-0.698±0.004	-1.452±0.039
+Dec(arcsec)	0	0.406±0.003	0.960±0.003	0.792±0.003	0.512±0.005	1.177±0.011
+fluxes	F160W	17.59±0.02	17.65±0.02	18.34±0.03	18.65±0.02	17.93±0.03	20.61±0.01
+F555W	18.83±0.04	19.18±0.03	19.89±0.05	20.27±0.10	22.97±0.19	25.78±1.07
+F814W	18.38±0.02	18.64±0.02	19.36±0.01	19.66±0.03	20.47±0.02	22.83±0.27
+
+Click on images for full size version.
+###################################################################################################################################
+
+###################################################################################################################################
+Here is a summary of RXJ0921+4529 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	B'	G	G1
+Position	RA(arcsec)	0	6.322±0.005	6.224±0.019	2.908±0.014	2.908±0.014
+Dec(arcsec)	0	-2.837±0.004	-2.586±0.021	-0.881±0.006	-0.881±0.006
+fluxes	F160W	16.90±0.02	18.29±0.04	18.69±0.20	18.62±0.13	19.43±0.08
+F555W	18.93±0.08	21.18±0.29	 	21.37±0.47	 
+F814W	17.96±0.04	19.94±0.03	21.05±0.26	20.24±0.01	22.22±0.07
+
+Click on images for full size version.
+###################################################################################################################################
+###################################################################################################################################
+
+
+
+###################################################################################################################################
+Here is a summary of SDSS1226-0006 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G	G'
+Position	RA(arcsec)	0	1.257±0.003	0.437±0.003	1.708±0.007
+Dec(arcsec)	0	-0.056±0.003	0.018±0.003	3.172±0.004
+fluxes	F160W	17.24±0.02	18.01±0.02	17.47±0.12	19.21±0.14
+F555W	18.57±0.01	19.33±0.03	23.78±0.00	23.95±0.06
+F814W	18.84±0.10	19.36±0.07	19.72±0.07	21.54±0.01
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of Q1208+101 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B
+Position	RA(arcsec)	0	0.127±0.003
+Dec(arcsec)	0	-0.461±0.003
+fluxes	F160W	15.91±0.03	17.55±0.02
+F555W	18.42±0.10	19.66±0.02
+F814W	17.22±0.03	18.63±0.09
+
+Click on images for full size version.
+###################################################################################################################################
+###################################################################################################################################
+Here is a summary of B1152+200 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G	G'
+Position	RA(arcsec)	0	0.936±0.003	0.549±0.005	-0.071±0.006
+Dec(arcsec)	0	-1.246±0.003	-0.978±0.005	-1.041±0.006
+fluxes	F160W	15.63±0.02	17.20±0.02	17.12±0.11	17.96±0.47
+F555W	17.70±0.23	22.03±0.24	21.00±0.02	21.57±0.07
+F814W	16.58±0.01	19.91±0.01	19.26±0.02	20.36±0.07
+Data from Myers99
+Observations	A	B
+Position	RA(arcsec)	0.000±0.0	0.935±0.005
+Dec(arcsec)	0.0±0.0	-1.248±0.005
+fluxes	15GHz	43.78±0.25	14.34±0.25
+8.4GHz	52.27±0.16	17.23±0.16
+Data from Toft00
+Observations	A	B	G
+Position	RA(arcsec)	 	 	 
+Dec(arcsec)	 	 	 
+fluxes	I	16.38±0.02	19.26±0.03	19.18±0.04
+R	16.42±0.02	20.20±0.04	19.61±0.04
+V	17.28±0.03	21.73±0.03	 
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of SDSS1155+6346 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G
+Position	RA(arcsec)	0	1.903±0.003	1.684±0.005
+Dec(arcsec)	0	0.404±0.003	0.331±0.003
+fluxes	F160W	16.94±0.02	17.91±0.02	16.06±0.17
+F555W	18.96±0.02	19.38±0.12	19.35±0.03
+F814W	18.11±0.02	18.87±0.07	17.82±0.16
+Data from Pindor04
+Observations	A	B	G
+Position	RA(arcsec)	0.000±0.001	-1.795±0.007	-0.14±0.010
+Dec(arcsec)	+0.000±0.001	-0.364±0.004	-0.062±0.006
+fluxes	K	17.4±0.1	16.6±0.1	14.9±0.1
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of SDSS1138+0314 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	C	D	G
+Position	RA(arcsec)	0	-0.103±0.003	-1.184±0.003	-0.698±0.003	-0.474±0.003
+Dec(arcsec)	0	0.979±0.003	0.812±0.003	-0.056±0.003	0.534±0.003
+fluxes	F160W	17.96±0.02	19.12±0.03	18.98±0.03	19.10±0.03	17.97±0.08
+F555W	19.37±0.07	20.63±0.09	20.59±0.06	20.96±0.03	22.63±0.05
+F814W	19.05±0.01	20.75±0.07	20.18±0.04	20.79±0.11	20.04±0.01
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of MG1131+0456 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	G	G1	G2	MainSource
+Position	RA(arcsec)	0	0.181±0.010	-1.960±0.010	-0.383±0.017
+Dec(arcsec)	0	-3.245±0.005	1.978±0.020	-0.255±0.008
+fluxes	F160W	18.62±0.08	20.04±0.04	20.60±0.13	19.29±0.06
+F555W	23.85±0.24	 	 	 
+F675W	22.47±0.05	26.30±0.88	 	 
+F814W	21.21±0.03	24.76±0.12	 	 
+
+Click on images for full size version.
+###################################################################################################################################
+###################################################################################################################################
+Here is a summary of B1127+385 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G	G2
+Position	RA(arcsec)	0	0.690±0.014	0.276±0.006	0.804±0.017
+Dec(arcsec)	0	0.155±0.010	-0.048±0.017	-0.365±0.034
+fluxes	F160W	21.63±0.20	21.63±0.09	20.32±0.20	20.87±0.41
+F555W	28.48±0.49	30.09±0.50	26.27±0.28	26.07±0.56
+F814W	25.89±0.16	27.25±0.45	23.00±0.03	23.37±0.11
+
+Click on images for full size version.
+###################################################################################################################################
+
+###################################################################################################################################
+###################################################################################################################################
+Here is a summary of B1030+074 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G	G'
+Position	RA(arcsec)	0	0.963±0.003	0.878±0.003	0.374±0.008
+Dec(arcsec)	0	-1.308±0.003	-1.143±0.003	-1.283±0.005
+fluxes	F160W	18.07±0.03	20.68±0.09	18.34±0.16	20.07±0.10
+F555W	20.66±0.23	27.58±0.20	21.61±0.15	25.89±0.26
+F814W	19.45±0.25	23.12±0.24	20.02±0.05	22.48±0.11
+
+Click on images for full size version.
+
+Original data: 
+###################################################################################################################################
+Here is a summary of SDSS1029+2623 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+
+Click on images for full size version.
+
+Original data:
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:30 EDT 2015. 
+###################################################################################################################################
+Here is a summary of FSC10214+4724 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	G	Source
+Position	RA(arcsec)	0	0.005±0.003
+Dec(arcsec)	0	-0.367±0.004
+fluxes	F814W	20.40±0.11	25.26±0.09
+F110W	19.29±0.10	23.40±0.05
+F205W	17.04±0.12	21.49±0.47
+F555W	23.18±0.35	25.44±0.04
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of SDSS1021+4913 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+
+Click on images for full size version.
+
+Original data:
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:30 EDT 2015. 
+###################################################################################################################################
+###################################################################################################################################
+
+###################################################################################################################################
+Here is a summary of SDSS1011+0143 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Morgan04
+Observations	A	B	C	D	G
+Position	RA(arcsec)	-1.55±0.02	0.81±0.03	1.86±0.03	-1.00±0.03	0.00±0.00
+Dec(arcsec)	-1.14±0.02	-1.36±0.03	0.91±0.03	1.46±0.04	0.0±0.0
+fluxes	B(AB)	23.79±0.01	23.84±0.04	24.05±0.04	24.10±0.05	19.86±0.05
+
+Click on images for full size version.
+###################################################################################################################################
+###################################################################################################################################
+Here is a summary of J1004+1229 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G
+Position	RA(arcsec)	0	0.267±0.003	0.206±0.007
+Dec(arcsec)	0	1.516±0.003	1.253±0.007
+fluxes	F160W	15.88±0.02	18.28±0.03	18.84±0.33
+F555W	23.81±0.01	26.45±0.06	25.06±0.08
+F814W	19.74±0.01	22.35±0.04	21.60±0.05
+Data from Lacy02
+Observations	A	B
+Position	RA(arcsec)	0.0±0.0	-0.2633±0.0010
+Dec(arcsec)	+0.0±0.0	1.5172±0.0017
+fluxes	1.7GHz	6.23±0.11	0.99±0.11
+I	19.9±0.10	21.5±0.15
+
+Click on images for full size version.
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+Here is a summary of BRI0952-0115 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G
+Position	RA(arcsec)	0	-0.696±0.003	-0.396±0.003
+Dec(arcsec)	0	-0.709±0.003	-0.506±0.003
+fluxes	F160W	17.07±0.01	18.44±0.01	18.95±0.15
+F555W	20.66±0.02	21.99±0.03	23.67±0.08
+F675W	19.20±0.01	20.48±0.04	22.08±0.02
+F814W	18.53±0.04	19.93±0.04	21.21±0.02
+
+Click on images for full size version.
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+Here is a summary of LBQS1429-008 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations 	A 	B
+Position 	RA(arcsec) 	0 	-4.463±0.004
+Dec(arcsec) 	0 	2.482±0.003
+fluxes 	F160W 	15.83±0.02 	19.46±0.05
+###################################################################################################################################
+Q1343+2650
+###################################################################################################################################
+ HS1216+5032 
+###################################################################################################################################
+PKS1145-071
+###################################################################################################################################
+Here is a summary of B0827+525 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Koopmans00
+Observations 	A 	B
+Position 	RA(arcsec) 	+1.06402±0.00016 	-1.07416±0.00026
+Dec(arcsec) 	+0.93074±0.00016 	-0.90040±0.00026
+fluxes 	5GHz 	31.6±0.1 	19.9±0.1
+F160W 	19.6±0.2 	22.6±0.2
+
+Click on images for full size version.
+
+Original data:
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:53:41 EDT 2015. 
+###################################################################################################################################
+Here is a summary of Q0252-3249 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Morgan00
+Observations 	A 	B
+Position 	RA(arcsec) 	0.0±0.0 	0.698±0.023
+Dec(arcsec) 	0.0±0.0 	-1.972±0.006
+fluxes 	I 	17.664±0.009 	19.517±0.017
+B 	18.377±0.005 	20.936±0.030
+R 	18.086±0.009 	19.948±0.008
+
+Click on images for full size version.
+
+Original data:
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:53:57 EDT 2015. 
+###################################################################################################################################
+
+
+Here is a summary of Q0151+048 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+
+Click on images for full size version.
+
+Original data:
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:19 EDT 2015. 
+###################################################################################################################################
+Here is a summary of QJ0240-343 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+
+Click on images for full size version.
+
+Original data:
+QJ0240 H
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:38 EDT 2015. 
+###################################################################################################################################
+
+
+Here is a summary of Q0151+048 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+
+Click on images for full size version.
+
+Original data:
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:19 EDT 2015. 
+###################################################################################################################################
+Here is a summary of LBQS0103-2753 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+
+Click on images for full size version.
+
+Original data:
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:38 EDT 20
+###################################################################################################################################
+
+
+Here is a summary of MG0023+171 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+
+Click on images for full size version.
+
+Original data:
+MG0023 R MG0023 V
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:07 EDT 2015. 
+###################################################################################################################################
+Here is a summary of LBQS0015+0239 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+
+Click on images for full size version.
+
+Original data:
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:38 EDT 2015. 
+###################################################################################################################################
+Here is a summary of PSS2322+1944 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations 	A 	B 	G
+Position 	RA(arcsec) 	0 	0.350±0.003 	0.254±0.003
+Dec(arcsec) 	0 	-1.453±0.003 	-1.008±0.003
+fluxes 	F160W 	17.10±0.02 	18.92±0.03 	18.93±0.16
+F555W 	19.56±0.01 	21.68±0.06 	25.92±0.88
+F814W 	18.07±0.01 	20.12±0.04 	21.91±0.17
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of B2319+052 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations 	G
+Position 	RA(arcsec) 	0
+Dec(arcsec) 	0
+fluxes 	F160W 	18.20±0.08
+F555W 	23.43±0.02
+F814W 	20.71±0.77
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of Q2237+030 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations 	A 	B 	C 	D 	G
+Position 	RA(arcsec) 	0 	-0.673±0.003 	0.635±0.003 	-0.866±0.003 	-0.075±0.004
+Dec(arcsec) 	0 	1.697±0.003 	1.210±0.003 	0.528±0.003 	0.939±0.003
+fluxes 	F160W 	14.96±0.06 	15.46±0.01 	15.71±0.01 	16.00±0.03 	12.22±0.03
+F205W 	14.43±0.03 	14.96±0.01 	15.21±0.02 	15.44±0.02 	11.88±0.01
+F555W 	17.35±0.07 	17.47±0.10 	18.56±0.10 	19.01±0.12 	15.49±0.01
+F675W 	16.41±0.02 	17.86±0.01 	17.40±0.01 	18.04±0.02 	14.66±0.01
+F814W 	15.92±0.01 	17.21±0.07 	16.77±0.11 	17.39±0.02 	14.15±0.00
+Data from Castles/Extinct
+Observations 	A 	B 	C 	D 	G
+Position 	RA(arcsec) 	0 	-0.673±0.000 	0.635±0.000 	-0.866±0.000 	-0.075±0.000
+Dec(arcsec) 	0 	1.697±0.000 	1.210±0.000 	0.528±0.000 	0.939±0.000
+fluxes 	F218W 	17.47±0.12 	18.96±0.28 	18.65±0.16 	19.38±0.11 	 
+F255W 	16.56±0.07 	18.24±0.18 	17.96±0.09 	18.70±0.21 	 
+F300W 	16.25±0.18 	17.72±0.10 	17.40±0.14 	18.10±0.06 	 
+F336W 	15.97±0.21 	17.48±0.08 	17.08±0.26 	17.64±0.25 	 
+F439W 	17.00±0.10 	18.46±0.17 	17.97±0.12 	18.85±0.02 	16.98±0.15
+F555W 	16.95±0.14 	18.32±0.10 	17.81±0.02 	18.57±0.14 	15.53±0.01
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of HDFS2232509-603243 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+
+Click on images for full size version.
+
+Original data:
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:00 ED
+###################################################################################################################################
+Here is a summary of CY2201-3201 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+
+Click on images for full size version.
+
+Original data:
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:42 EDT 2015. 
+###################################################################################################################################
+Here is a summary of HE2149-2745 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations 	A 	B 	G
+Position 	RA(arcsec) 	0 	0.890±0.003 	0.714±0.007
+Dec(arcsec) 	0 	1.446±0.003 	1.150±0.005
+fluxes 	F160W 	15.67±0.03 	17.23±0.03 	17.61±0.10
+F555W 	16.97±0.03 	18.67±0.07 	21.18±0.09
+F814W 	16.52±0.01 	18.08±0.02 	19.56±0.02
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of B2114+022 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations 	G 	G'
+Position 	RA(arcsec) 	0 	0.137±0.004
+Dec(arcsec) 	0 	1.300±0.003
+fluxes 	F160W 	16.37±0.11 	16.62±0.18
+F555W 	20.22±0.01 	21.73±0.00
+F814W 	18.63±0.01 	19.11±0.01
+
+Click on images for full size version.
+
+Original data:
+B2114 H B2114 I B2114 V
+
+Cleaned data:
+B2114 H B2114 I B2114 V
+
+This page last updated Mon Oct 26 19:53:55 EDT 2015. 
+###################################################################################################################################
+Here is a summary of B2108+213 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations 	A 	B 	G1 	G2
+Position 	RA(arcsec) 	0 	2.133±0.011 	1.426±0.005 	1.271±0.004
+Dec(arcsec) 	0 	-4.037±0.017 	-2.887±0.004 	-1.790±0.003
+fluxes 	F160W 	19.28±0.04 	20.76±0.33 	15.65±0.02 	18.32±0.04
+F555W 	22.43±0.03 	23.80±0.08 	20.13±0.01 	22.90±0.04
+F814W 	21.18±0.03 	22.59±0.06 	17.72±0.02 	20.52±0.03
+
+Click on images for full size version.
+
+Original data:
+B2108 H B2108 I B2108 V
+
+Cleaned data:
+B2108 H B2108 I B2108 V
+
+This page last updated Mon Oct 26 19:53:54 EDT 2015. 
+###################################################################################################################################
+Here is a summary of B2045+265 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations 	A 	B 	C 	G 	S
+Position 	RA(arcsec) 	0 	-0.136±0.003 	-0.288±0.003 	1.100±0.003 	2.992±0.003
+Dec(arcsec) 	0 	-0.249±0.003 	-0.790±0.003 	-0.811±0.004 	-1.479±0.004
+fluxes 	F160W 	19.77±0.02 	20.27±0.03 	19.92±0.04 	18.35±0.08 	19.52±0.02
+F555W 	25.79±0.14 	26.38±0.19 	25.96±0.16 	23.62±0.10 	24.88±0.10
+F814W 	23.01±0.17 	23.52±0.02 	23.18±0.16 	21.06±0.02 	21.74±0.02
+
+Click on images for full size version.
+###################################################################################################################################
+
+###################################################################################################################################
+Here is a summary of WFI2026-4536 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations 	A1 	A2 	B 	C 	G
+Position 	RA(arcsec) 	0.163±0.000 	0.416±0.003 	0 	-0.572±0.003 	-0.074±0.012
+Dec(arcsec) 	-1.428±0.000 	-1.214±0.003 	0 	-1.042±0.003 	-0.798±0.008
+fluxes 	F160W 	15.64±0.01 	16.09±0.01 	17.11±0.01 	17.33±0.02 	18.80±0.43
+Data from Morgan04
+Observations 	A1 	A2 	B 	C 	G
+Position 	RA(arcsec) 	0.162±0.002 	0.415±0.002 	0.000±0.002 	-0.572±0.002 	-0.081±0.003
+Dec(arcsec) 	-1.428±0.001 	-1.213±0.001 	0.000±0.001 	-1.044±0.004 	-0.797±0.007
+fluxes 	i 	17.11±0.06 	17.36±0.07 	18.40±0.01 	18.63±0.01 	 
+
+Click on images for full size version.
+###################################################################################################################################
+
+
+Here is a summary of MG2016+112 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations 	A 	B 	C 	G 	G1 	G2 	G3 	Star
+Position 	RA(arcsec) 	0 	-3.004±0.004 	-2.052±0.015 	-1.735±0.003 	-2.494±0.028 	-5.744±0.008 	3.753±0.011 	0.790±0.015
+Dec(arcsec) 	0 	-1.504±0.006 	-3.248±0.007 	-1.778±0.003 	-4.033±0.027 	1.763±0.009 	-5.127±0.013 	-1.798±0.025
+fluxes 	F160W 	20.48±0.05 	20.50±0.03 	20.21±0.04 	18.46±0.09 	23.08±0.61 	20.54±0.09 	20.77±0.14 	23.01±0.17
+F555W 	22.92±0.28 	23.65±0.01 	24.44±0.71 	25.12±0.93 	24.92±0.30 	  	  	 
+F814W 	22.45±0.04 	22.62±0.04 	23.15±0.04 	21.95±0.02 	24.56±0.00 	24.76±0.18 	23.84±0.08 	23.08±0.01
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of PMNJ2004-1349 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations 	A 	B 	G
+Position 	RA(arcsec) 	0 	-0.984±0.003 	-0.767±0.003
+Dec(arcsec) 	0 	-0.552±0.003 	-0.249±0.005
+fluxes 	F160W 	19.33±0.04 	19.98±0.04 	18.54±0.12
+F555W 	25.05±2.33 	28.95±1.26 	25.33±1.26
+F814W 	22.04±0.13 	24.49±0.14 	21.61±0.04
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of B1938+666 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations 	G 	Source
+Position 	RA(arcsec) 	0 	-0.017±0.003
+Dec(arcsec) 	0 	0.038±0.007
+fluxes 	F160W 	18.67±0.08 	22.02±0.19
+F555W 	24.45±0.84 	 
+F814W 	21.46±0.07 	 
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of B1933+503 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations 	G 	Source
+Position 	RA(arcsec) 	0 	0.034±0.173
+Dec(arcsec) 	0 	0.139±0.108
+fluxes 	F160W 	17.11±0.00 	20.01±0.00
+F814W 	20.24±0.06 	23.55±0.41
+
+Click on images for full size version.
+
+Original data: 
+###################################################################################################################################
+Here is a summary of PMNJ1838-3427 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations 	A 	B 	G 	G'
+Position 	RA(arcsec) 	0 	-0.097±0.003 	-0.091±0.003 	5.246±0.009
+Dec(arcsec) 	0 	-0.987±0.006 	-0.904±0.003 	-1.193±0.010
+fluxes 	F160W 	17.35±0.04 	20.98±0.10 	18.96±0.06 	17.57±0.66
+F555W 	19.82±0.13 	23.44±0.41 	23.47±0.50 	 
+F814W 	19.15±0.05 	22.55±0.07 	21.22±0.04 	 
+
+Click on images for full size version.
+
+Original data: 
+###################################################################################################################################
+
+
+Here is a summary of PKS1830-211 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations 	A 	B 	G 	P 	S1
+Position 	RA(arcsec) 	0 	-0.653±0.000 	-0.501±0.074 	-0.315±0.006 	0.088±0.003
+Dec(arcsec) 	0 	-0.721±0.000 	-0.445±0.079 	-0.464±0.004 	0.535±0.003
+fluxes 	F160W 	16.94±0.01 	22.43±0.32 	18.58±0.37 	21.41±0.12 	17.10±0.02
+F205W 	15.43±0.01 	19.43±0.07 	17.40±0.07 	20.25±0.26 	16.70±0.01
+F814W 	22.29±0.06 	26.69±0.13 	21.42±0.10 	24.02±0.23 	19.41±0.05
+
+Click on images for full size version.
+###################################################################################################################################
+
+
+Here is a summary of HST18078+4600 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+
+Click on images for full size version.
+
+Original data:
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:07 EDT 2015. 
+###################################################################################################################################
+Here is a summary of MG1654+1346 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations 	A 	G 	Star
+Position 	RA(arcsec) 	2.249±0.006 	0 	-4.485±0.013
+Dec(arcsec) 	2.018±0.006 	0 	-2.452±0.007
+fluxes 	F160W 	19.12±0.02 	15.83±0.04 	15.88±0.02
+F555W 	21.24±0.19 	19.72±0.03 	17.71±0.13
+F675W 	20.60±0.06 	18.55±0.01 	16.90±0.01
+F814W 	20.18±0.03 	17.90±0.02 	16.63±0.01
+
+Click on images for full size version.
+###################################################################################################################################
+
+
+Here is a summary of SDSS1650+4251 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Morgan03
+Observations 	A 	B 	G
+Position 	RA(arcsec) 	0.000 	0.223±0.002 	0.017±0.032
+Dec(arcsec) 	0.0 	-1.163±0.001 	-0.872±0.026
+fluxes 	I 	17.15±0.1 	19.05±0.1 	20.5±0.5
+
+Click on images for full size version.
+
+Original data:
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:38 EDT 2015. 
+###################################################################################################################################
+Here is a summary of FBQ1633+3134 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations 	A 	B 	G
+Position 	RA(arcsec) 	0 	0.524±0.003 	0.273±0.248
+Dec(arcsec) 	0 	-0.404±0.003 	-0.420±0.148
+fluxes 	F160W 	15.78±0.03 	17.23±0.02 	16.80±0.62
+F555W 	17.55±0.05 	18.95±0.06 	19.21±0.20
+F814W 	16.85±0.01 	18.29±0.01 	18.26±0.05
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of PMNJ1632-0033 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G
+Position	RA(arcsec)	0	1.244±0.004	1.141±0.006
+Dec(arcsec)	0	-0.782±0.003	-0.707±0.003
+fluxes	F160W	18.93±0.03	20.94±0.06	19.71±0.10
+F555W	21.90±0.12	25.87±0.07	25.58±0.10
+F814W	20.73±0.03	24.16±0.08	23.41±0.06
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of HST16309+8230 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+
+Click on images for full size version.
+
+Original data:
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:07 EDT 2015. 
+###################################################################################################################################
+Here is a summary of HST16302+8230 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+
+Click on images for full size version.
+
+Original data:
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:07 EDT 2015. 
+###################################################################################################################################
+Here is a summary of B1600+434 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G	G1	G2	Source
+Position	RA(arcsec)	0	-0.720±0.003	-0.110±0.003	-0.110±0.003	3.553±0.003	-0.283±0.009
+Dec(arcsec)	0	1.183±0.004	0.369±0.004	0.369±0.004	-2.204±0.004	0.637±0.007
+fluxes	F160W	20.66±0.03	20.47±0.03	18.30±0.13	19.36±0.29	18.73±0.07	20.78±0.06
+F555W	23.61±0.12	22.32±0.09	 	 	 	 
+F814W	21.92±0.10	21.39±0.03	20.78±0.06	25.99±530.00	 	 
+
+Click on images for full size version.
+
+Original data: 
+###################################################################################################################################
+Here is a summary of B1555+375 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A+B	C	G
+Position	RA(arcsec)	0	-0.417±0.014	-0.174±0.026
+Dec(arcsec)	0	-0.013±0.008	-0.145±0.015
+fluxes	F160W	21.73±0.08	21.15±0.26	20.01±0.50
+Data from Marlow99
+Observations	A	B	C	D
+Position	RA(arcsec)	0.000	-0.073±0.001	-0.412±0.001	-0.162±0.006
+Dec(arcsec)	+0.000	+0.048±0.001	-0.028±0.001	-0.368±0.006
+fluxes	5GHz	17.0	9.7	8.3	1.3
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of MG1549+3047 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	G
+Position	RA(arcsec)	0	-6.616±0.005
+Dec(arcsec)	0	3.390±0.004
+fluxes	F160W	20.52±0.04	14.73±0.02
+F205W	 	14.00±0.01
+F555W	 	18.19±0.01
+F814W	 	16.70±0.01
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of HST15433+5352 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+
+Click on images for full size version.
+
+Original data:
+HST15433 H HST15433 I HST15433 V
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:07 EDT 2015. 
+###################################################################################################################################
+
+###################################################################################################################################
+
+###################################################################################################################################
+Here is a summary of HST14176+5226 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	C	D	G
+Position	RA(arcsec)	1.288±0.008	0.880±0.024	-0.792±0.011	-0.808±0.024	0
+Dec(arcsec)	-1.175±0.010	0.879±0.020	1.332±0.017	-0.794±0.032	0
+fluxes	F606W	25.43±0.19	25.84±0.05	25.20±0.35	25.87±0.22	21.91±0.01
+F160W	 	 	 	 	17.53±0.07
+F814W	24.85±0.13	25.08±0.03	24.62±0.12	25.23±0.15	19.77±0.01
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of HST14164+5215 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G
+Position	RA(arcsec)	0	-1.339±0.016	-0.640±0.000
+Dec(arcsec)	0	1.781±0.015	1.004±0.000
+fluxes	F814W	23.21±0.05	23.89±0.12	19.91±0.07
+F160W	22.02±0.27	22.93±0.28	18.31±0.05
+F606W	23.93±0.10	24.49±0.08	21.01±0.03
+
+Click on images for full size version.
+###################################################################################################################################
+###################################################################################################################################
+Here is a summary of HST14113+5211 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	C	D	G
+Position	RA(arcsec)	-1.095±0.003	-0.118±0.038	1.132±0.004	0.268±0.004	0
+Dec(arcsec)	0.368±0.007	-0.551±0.036	-0.036±0.009	0.695±0.009	0
+fluxes	F702W	25.06±0.07	25.54±0.30	25.13±0.14	25.19±0.11	20.50±0.06
+F555W	26.05±0.12	27.62±0.70	25.97±0.06	26.65±0.04	22.19±0.06
+F814W	25.59±0.14	26.19±0.50	25.37±0.08	25.60±0.22	19.99±0.03
+
+Click on images for full size version.
+
+Original data: 
+###################################################################################################################################
+
+
+Here is a summary of SDSS1406+6126 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Inada06
+Observations	A	B	G
+Position	RA(arcsec)	0.000±0.004	-1.639±0.007	-1.143±0.006
+Dec(arcsec)	+0.000±0.004	-1.103±0.007	-0.727±0.006
+fluxes	I	19.38±0.01	19.97±0.04	18.12±0.02
+
+Click on images for full size version.
+
+Original data:
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:36 EDT 2015. 
+###################################################################################################################################
+Here is a summary of SDSS1402+6321 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+
+Click on images for full size version.
+
+Original data:
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:36 EDT 2015. 
+###################################################################################################################################
+Here is a summary of B1359+154 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	C	D	E	F	G	G'	G''
+Position	RA(arcsec)	0	-0.483±0.007	-0.323±0.007	0.957±0.008	0.627±0.013	0.426±0.016	0.160±0.008	0.658±0.005	0.575±0.007
+Dec(arcsec)	0	-1.253±0.009	-1.640±0.003	-1.357±0.008	-1.129±0.011	-0.951±0.028	-0.935±0.024	-0.690±0.008	-1.516±0.011
+fluxes	F814W	24.01±0.05	24.29±0.10	24.01±0.05	25.19±0.07	25.12±0.15	26.25±0.20	22.68±0.26	23.69±0.22	23.70±0.30
+F555W	24.69±0.10	24.72±0.10	24.28±0.10	25.80±0.16	25.57±0.15	26.54±0.09	25.99±0.54	26.82±0.29	26.93±1.01
+Data from Rusin01
+Observations	A	B	C	D	E	F
+Position	RA(arcsec)	0.00±0.00	-0.49020±0.00003	-0.31126±0.00003	0.96257±0.00003	0.60876±0.00003	0.42220±0.00003
+Dec(arcsec)	0.0±0.0	-1.25240±0.00003	-1.66956±0.00003	-1.36864±0.00003	-1.14296±0.00003	-0.96377±0.00003
+fluxes	1.7GHz	22.6±0.13	14.5±0.13	14.5±0.13	14.5±0.13	14.5±0.13	14.5±0.13
+Data from Myers99
+Observations	A	B	C	D	E	F
+Position	RA(arcsec)	0.00±0.00	-0.489±0.006	-0.310±0.004	0.958±0.019	0.617±0.017	0.437±0.065
+Dec(arcsec)	0.0±0.0	-1.256±0.006	-1.662±0.004	-1.372±0.018	-1.138±0.016	-0.955±0.064
+fluxes	8.4GHz	9.57±0.19	5.82±0.19	7.92±0.19	1.93±0.19	2.17±0.19	0.50±0.19
+
+Click on images for full size version.
+
+Original data: 
+###################################################################################################################################
+Here is a summary of Q1355-2257 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G
+Position	RA(arcsec)	0	-1.174±0.003	-0.910±0.006
+Dec(arcsec)	0	-0.347±0.003	-0.304±0.018
+fluxes	F160W	15.91±0.02	17.38±0.02	17.36±0.20
+F555W	17.61±0.12	19.27±0.14	28.22±0.00
+F814W	17.21±0.07	18.57±0.08	19.04±1.17
+
+Click on images for full size version.
+###################################################################################################################################
+###################################################################################################################################
+
+
+Here is a summary of LBQS1333+0113 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	G	G'
+Position	RA(arcsec)	0	1.079±0.003	0.856±0.003	3.396±0.004
+Dec(arcsec)	0	-1.217±0.003	-0.859±0.003	-0.999±0.004
+fluxes	F160W	16.18±0.02	17.49±0.02	17.52±0.04	19.69±0.12
+Data from Oguri04a
+Observations	A	B	G
+Position	RA(arcsec)	0.000±0.001	-1.038±0.002	-0.769±0.011
+Dec(arcsec)	+0.000±0.001	-1.165±0.002	-0.757±0.011
+fluxes	i	17.60	18.68	20.05
+K	16.75	15.78	 
+g	18.12	19.39	 
+r	17.95	19.09	 
+u	18.54	19.68	 
+z	18.54	17.49	 
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of SDSS1332+0347 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Morokuma06
+Observations	A	B	G
+Position	RA(arcsec)	0.000±0.006	-1.024±0.006	-0.228±0.013
+Dec(arcsec)	+0.000±0.006	-0.501±0.006	-0.119±0.013
+fluxes	i	19.28±0.03	19.66±0.02	18.64±0.02
+
+Click on images for full size version.
+
+Original data:
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:36 EDT 2015. 
+###################################################################################################################################
+
+
+Here is a summary of HST12531-2914 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+Data from Castles
+Observations	A	B	C	D	G
+Position	RA(arcsec)	-0.737±0.023	0.605±0.038	-0.140±0.014	0.166±0.041	0
+Dec(arcsec)	-0.011±0.016	-0.339±0.011	-0.519±0.025	0.454±0.015	0
+fluxes	F606W	27.03±0.11	26.83±0.14	26.55±0.09	26.86±0.39	23.83±0.03
+F160W	 	 	 	 	19.50±0.03
+F814W	26.49±0.10	26.23±0.47	26.04±0.16	26.13±0.25	21.83±0.03
+
+Click on images for full size version.
+###################################################################################################################################
+Here is a summary of HST12368+6212 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
+
+Click on images for full size version.
+
+Original data:
+
+Cleaned data:
+
+This page last updated Mon Oct 26 19:54:06 EDT 2015. 
