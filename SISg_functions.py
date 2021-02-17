@@ -3,36 +3,13 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as pch
 
 
-def minmax(pos):
+def minmax(pos): #obsolete
     mima=np.zeros(2)
     mima[0]=np.min(pos)
     mima[1]=np.max(pos)
     return mima
 
 
-def SISg(img,lens,R0,GE):
-    r=img-lens
-    r_abs=np.sqrt((r[0]**2+r[1]**2))
-
-#field
-    k=1/2*R0/r_abs
-    gsis=np.array([1/2*R0*((-r[0]**2+r[1]**2)/(r_abs**3)),-R0*((r[0]*r[1])/(r_abs**3))])
-    g=[gsis[0]+GE[0],gsis[1]+GE[1]]
-    g_abs=np.sqrt((g[0]**2+g[1]**2))
-
-    mu=1/((1-k)**2-g_abs**2).flatten()
-#field
-    psi11= R0*((r[1]**2)/(r_abs**3))+GE[0]
-    psi22= R0*((r[0]**2)/(r_abs**3))-GE[0]
-    psi12= -R0*((r[0]*r[1])/(r_abs**3))+GE[1]
-
-    psi=np.zeros([img.size,2,2])
-    #for i in range(len(ix)):
-    #    psi[i]=np.array([[psi11[i],psi12[i]],[psi12[i],psi22[i]]])
-
-    
-    #mu_ratios=np.array([[mu/mu[0]],[mu/mu[1]],[mu/mu[2]],[mu/mu[3]]])
-    return k,g_abs,psi,mu
 
 def draw_err_ellipse(center,axis,colour='r'):
         '''draws error ellipses to figure
@@ -45,7 +22,7 @@ def draw_err_ellipse(center,axis,colour='r'):
                 ell=pch.Ellipse(center[:,i],axis[0,i],axis[1,i],color=colour,alpha=.25)
                 ax.add_artist(ell)
 
-def get_coords(QSO):
+def get_coords(QSO): #obsolete
     '''filename or path'''
     #if path
     

@@ -113,23 +113,7 @@ Dec(arcsec)	+0.00000±0.0001	+0.00087±0.0001	+0.12740±0.0001	+0.12740±0.0001
 fluxes	15GHz	621±17	379±5	172±3	104±3
 
 Click on images for full size version.
-###################################################################################################################################
-Here is a summary of HE0230-2130 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
-Data from Castles
-Observations	A	B	C	D	G	G'
-Position	RA(arcsec)	0	0.698±0.003	1.198±0.005	-0.244±0.007	0.072±0.003	-0.212±0.025
-Dec(arcsec)	0	0.256±0.003	1.828±0.003	1.624±0.007	1.085±0.005	2.059±0.016
-fluxes	F814W	19.02±0.09	19.22±0.07	19.59±0.09	21.21±0.11	20.39±0.43	20.34±0.41
-F555W	19.58±0.12	19.80±0.09	20.45±0.20	21.83±0.15	23.24±0.69	22.35±0.36
-Data from Wisotzki99
-Observations	A	B	C	D	G
-Position	RA(arcsec)	0.00±0.00	0.68±0.01	1.17±0.02	-0.28±0.04	0.01±0.02
-Dec(arcsec)	0.00±0.00	0.27±0.01	1.80±0.02	1.98±0.04	1.13±0.02
-fluxes	I	18.49±0.02	18.43±0.02	19.00±0.02	19.74±0.05	19.63±0.04
-B	19.27±0.02	19.27±0.02	20.06±0.02	21.87±0.05	 
-R	18.83±0.02	18.89±0.02	19.45±0.02	20.42±0.05	20.62±0.04
 
-Click on images for full size version.
 ###################################################################################################################################
 Here is a summary of SDSS0246-0825 observations. Position separations are given in arcseconds. Values from this survey will appear in red. Other values (such as radio data) were obtained from the literature (See References ).
 Data from Castles

@@ -32,11 +32,11 @@ def Quad2(img, lens):
     dr0= sp.diff(s2,r0).doit().replace(y,y_fun).replace(R_abs,R_abs_fun).replace(x,x_fun)
     sol=sp.solve((dbx,dby,dgx,dgy,dr0),(r0,ge_x,ge_y,bx,by), simplify=True)
     
-    R0= sol[r0]
-    GE_X= sol[ge_x]
-    GE_Y= sol[ge_y]
-    BX= sol[bx]
-    BY= sol[by]
+    #R0= sol[r0]
+    #GE_X= sol[ge_x]
+    #GE_Y= sol[ge_y]
+    #BX= sol[bx]
+    #BY= sol[by]
 
     #theta=Source2ImgRT(R0,BX,BY,GE_X,GE_Y,coord)
 
@@ -62,24 +62,9 @@ def Twin2(img,lens,mag):
     return r0,bx,by,ge_x,ge_y
 #{b1 -> -0.607617, b2 -> -1.21824, t0 -> 2.19, g1 -> 0.570545, g2 -> 0.216076}}
 
-def Img2SourceRT(sis, coord):
 
-    R0= sis[r0]
-    GE_X= sis[ge_x]
-    GE_Y= sis[ge_y]
-    ix=coord[0]
-    iy=coord[1]
-    n=len(ix)
-
-    sx=lambda ix,iy: -GE_X*ix - GE_Y*iy - ix*R0/np.sqrt(ix**2 + iy**2) + ix
-    sy=lambda ix,iy:  GE_X*iy - GE_Y*ix - iy*R0/np.sqrt(ix**2 + iy**2) + iy
-
-    sCoor=np.zeros((2,n))
-    for j in range(n):
-            theta[0,j]=sx(ix[j],iy[j])
-            theta[1,j]=sy(ix[j],iy[j])
-
-    return sCoor
+#Old Code; not in use anymore kept for bug hunting and future reference.
+####################################################################################################################################
 
 def Source2ImgRT(R0,BX,BY,GE_X,GE_Y,coord):
     
@@ -96,12 +81,10 @@ def Source2ImgRT(R0,BX,BY,GE_X,GE_Y,coord):
             theta[0,j]=a[0]
             theta[1,j]=a[1]
     except ValueError:
-        print('No computed image found wihtin tolerance')
+        print('No computed image found within tolerance')
         
     return theta
 
-#Old Code
-####################################################################################################################################
 def Twin(ix,iy,igx,igy,mag,solver_type='analytic'): #obsolete
 
     n=2
@@ -202,6 +185,6 @@ def Quad(ix,iy,igx,igy):
             theta[0,i]=a[0]
             theta[1,i]=a[1]
     except ValueError:
-        print('No theta found within tolerance')
+        print('No theta found with in tolerance')
 
     return sol, theta
