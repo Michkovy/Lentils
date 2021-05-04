@@ -22,6 +22,9 @@ eGE=0
 ##g       lense galaxy
 ##'''
 
+
+
+
 def tsurfplot(res=250, mul=1.25):
         dist=np.sqrt(np.sum((img-lens)**2,axis=0))
         dist=np.append(np.sqrt(np.sum(Source+lens)**2),dist)
@@ -94,14 +97,14 @@ def lensplot(res=250, mul=1.25):
         imu_0= plt.contour(X,Y,1/muf,levels=[0],colors='r', linewidths=.66)    #1/mu=0 tangential critical line
 
         #Get 1/mu=0 isoline coordinates
-        imu_x= np.array([])
-        imu_y= np.array([])
+        #imu_x= np.array([])
+        #imu_y= np.array([])
 
-        for i in range(np.shape(imu_0.allsegs[0])[0]):
-                imu_x=np.append(imu_x, imu_0.allsegs[0][i][:,0])
-                imu_y=np.append(imu_y, imu_0.allsegs[0][i][:,1])
+        #for i in range(np.shape(imu_0.allsegs[0])[0]):
+                #imu_x=np.append(imu_x, imu_0.allsegs[0][i][:,0])
+                #imu_y=np.append(imu_y, imu_0.allsegs[0][i][:,1])
 
-        imu=np.vstack((imu_x,imu_y))         
+        #imu=np.vstack((imu_x,imu_y))         
 
         #Plotting II: The plot thickens
         ax.add_artist(Einstein_radius)
@@ -130,7 +133,7 @@ def lensplot(res=250, mul=1.25):
         XL=ax.get_xlim()
         YL=ax.get_ylim()
 
-        c=Img2SourceRT(sis,imu)
+        #c=Img2SourceRT(sis,imu)
         
         #Plotting III: The return of the text
         plt.xlabel('RA [as]')
@@ -173,7 +176,7 @@ def SISg(img,lens,R0,GE):
 
         i=np.arange(0,len(img[0]))
         psi=np.zeros((len(img[0]),2,2))
-        psi[i]=np.array(((psi11[i],psi12[i]),(psi12[i],psi22[i]))).T
+        psi[i]=np.array(((1-psi11[i],psi12[i]),(psi12[i],1-psi22[i]))).T
         #mu=1/np.linalg.det(psi)
         return k,g_abs,psi,mu
 
