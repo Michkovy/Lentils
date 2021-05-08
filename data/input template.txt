@@ -1,0 +1,7 @@
+Name Quad
+lens RA, RA error, lens dec, dec error
+Image A, img_A RA, RA error, img_A dec, dec error, img_A_mag, mag error
+Image B, img_B RB, RB error, img_B dec, dec error, img_B_mag, mag error
+Image C, img_C RC, RC error, img_C dec, dec error, img_C_mag, mag error
+Image D, img_D RD, RD error, img_D dec, dec error, img_D_mag, mag error
+# This is a comment
