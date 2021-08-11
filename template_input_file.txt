@@ -1,7 +1,0 @@
-SDSSJ1206+4332
-#LENTILS assumes dmag=mag_B-mag_A if using flux ratios or magnitude differences use mag_A=0 & mag_B=dmag. With dmag derrived from flux ratio if necessary
-#RA,RA_err,Dec,Dec_err
--0.664,.0137,1.748,.028
-#Name,RA,RA_err,Dec,Dec_err,mag,mag_err
-A,0,0.11,0,0.01,18.05,.02
-B,-0.098,0.006,2.894,.009,18.38,.02
