@@ -7,54 +7,179 @@ import matplotlib.pyplot as plt
 import glob
 import os
 from scipy.optimize import fsolve
+from mpl_toolkits import mplot3d
 
 plt.ion()
 r0,ge_x,ge_y,bx,by = sp.symbols('r0,ge_x,ge_y,bx,by', real=True) # needed to make the functions work
 keys=(r0,bx,by,ge_x,ge_y)
 eGE=0
 
-##
-##'''
-##i       image plane
-##x/y     intra plane dimensions
-##e       uncertainty
-##0/1/2/3 images
-##g       lense galaxy
-##'''
+'''
+i       image plane
+x/y     intra plane dimensions
+e       uncertainty
+0/1/2/3 images
+g       lense galaxy
+'''
 
+def parasweep(mode='g'):
+       '''Creates a 3D plot showing the variation of parameters as lens/image and magnitude changes.
+       Mag range -5 to 5 difference mag_B - mag_A
+       L/I distance 0 to 200% of observed
+       
+       Default parameter shown is absolute shear
+       Enter mode='R0' for Einstein radius
 
+       Requires the main program to be run beforehand.'''
 
+       #Define parameter range
+       mag_sweep=np.linspace(-5,5,200)
+       isepA=np.vstack((np.linspace(10e-8,2,200),np.ones(200))) #Moving Image A
+       paraA=np.zeros([5,200,200])
+       X,Y=np.meshgrid(isepA[0],mag_sweep)
+
+       for i in range(len(mag_sweep)):
+              for j in range(len(isepA[0])):
+                     r=(img-lens)*isepA.T[j]+lens
+                     paraA[:,i,j]=Twin2(r,lens,np.array([0,mag_sweep[i]]))
+
+       isepB=np.vstack((np.ones(200),np.linspace(10e-8,2,200))) # Moving Image B
+       paraB=np.zeros([5,200,200])
+       
+       for i in range(len(mag_sweep)):
+              for j in range(len(isepB[0])):
+                     r=(img-lens)*isepB.T[j]+lens
+                     paraB[:,i,j]=Twin2(r,lens,np.array([0,mag_sweep[i]]))
+
+       
+       if mode=='R0': # Plotting Einsteinradius
+              fig=plt.figure(figsize=(8.27, 11.69))     #A4 fig size
+              plt.suptitle('Image separation & Magnitude difference parametersweep for '+name)
+              ax=plt.subplot(2,1,1,projection='3d')
+              ax.plot_surface(X, Y, np.log(paraA[0]), rstride=1, cstride=1, edgecolor='grey',linewidth=.05, cmap='RdYlBu_r')
+              ax.view_init(45, 45)
+              plt.draw()
+
+              plt.title(r'Moving image A', loc='right')
+              plt.xlabel(r'$r/r_A$')
+              plt.ylabel(r'$\Delta$mag')
+              ax.set_zlabel(r'log(R_0)', rotation=0)
+              ax.zaxis.set_rotate_label(False)  # disable automatic rotation
+
+              ax=plt.subplot(2,1,2,projection='3d')
+              ax.plot_surface(X, Y, np.log(paraB[0]), rstride=1, cstride=1, edgecolor='grey',linewidth=.05, cmap='RdYlBu_r')
+              ax.view_init(45,45)
+              plt.draw()
+              plt.title(r'Moving image B', loc='right')
+              plt.xlabel(r'$r/r_B$')
+              plt.ylabel(r'$\Delta$mag')
+              ax.set_zlabel(r'log(R_0)', rotation=0)
+              ax.zaxis.set_rotate_label(False)  # disable automatic rotation
+
+              
+       else: # Plotting shear
+              fig=plt.figure(figsize=(8.27, 11.69))     #A4 fig size
+              plt.suptitle('Image separation & Magnitude difference parametersweep for '+name)
+              ax=plt.subplot(2,1,1,projection='3d')
+              ax.plot_surface(X, Y, np.log(np.sqrt(paraA[4]**2+paraA[3]**2)), rstride=1, cstride=1, edgecolor='grey',linewidth=.05, cmap='RdYlBu_r')
+              ax.view_init(45, 45)
+              plt.draw()
+
+              plt.title(r'Moving image A', loc='right')
+              plt.xlabel(r'$r/r_A$')
+              plt.ylabel(r'$\Delta$mag')
+              ax.set_zlabel(r'log(|$\gamma_{ext}$|)', rotation=0)
+              ax.zaxis.set_rotate_label(False)  # disable automatic rotation
+
+              ax=plt.subplot(2,1,2,projection='3d')
+              ax.plot_surface(X, Y, np.log(np.sqrt(paraB[4]**2+paraB[3]**2)), rstride=1, cstride=1, edgecolor='grey',linewidth=.05, cmap='RdYlBu_r')
+              ax.view_init(45,45)
+              plt.draw()
+              plt.title(r'Moving image B', loc='right')
+              plt.xlabel(r'$r/r_B$')
+              plt.ylabel(r'$\Delta$mag')
+              ax.set_zlabel(r'log(|$\gamma_{ext}$|)', rotation=0)
+              ax.zaxis.set_rotate_label(False)  # disable automatic rotation
+
+def magsweep():
+        ''' Variations of Einsteinradius and external shear as function of magnitude
+        Image separation is fixed
+        Requires main to be run first.
+        '''
+        mag_sweep=np.linspace(-5,5,200)
+        para=np.zeros([200,5])
+        dmag=mag[1]-mag[0]
+        for i in range(len(mag_sweep)):
+                para[i]=Twin2(img,lens,np.array([0,mag_sweep[i]]))
+                
+        plt.figure(figsize=(5,7))
+        plt.suptitle((r'$\Delta$mag parameter sweep for '+name))
+        plt.xlabel(r'Vertical line is lens $\Delta$mag')
+
+        #Einstein radius
+        ax=plt.subplot(3,1,1)
+        plt.plot(mag_sweep,para[:,0],'+k') #R0
+        plt.axvline(dmag, linewidth=.33,color='k')
+        plt.title(r'$R_0$')
+        plt.xlabel(r'$\Delta$mag')
+        plt.ylim(-5,5)
+        plt.xlim(-5,5)
+
+        #Ext Shear components
+        ax=plt.subplot(3,1,2)
+        plt.plot(mag_sweep,para[:,3],'.',markerfacecolor='none') #bx
+        plt.plot(mag_sweep,para[:,4],'+') #by
+        plt.title(r'$\gamma_{ext}$')
+        plt.axvline(dmag, linewidth=.33,color='k')
+        plt.xlabel(r'$\Delta$mag')
+        plt.legend(['x','y'], loc=1, frameon=False)
+        plt.ylim(-2.5,2.5)
+        plt.xlim(-5,5)
+
+        #Ext shear absolute
+        ax=plt.subplot(3,1,3)
+        plt.plot(mag_sweep,np.sqrt(para[:,4]**2+para[:,3]**2),color='k', linewidth=.66) #abs g
+        plt.title(r'$|\gamma_{ext}|$')
+        plt.axvline(dmag, linewidth=.33,color='k')
+        plt.axhline(0.5, linewidth=.33,color='r')
+        plt.xlabel(r'$\Delta$mag')
+        plt.xticks(np.arange(-5, 5, 1))
+        plt.ylim(0,1)
+        plt.xlim(-5,5)
+        plt.subplots_adjust(hspace=.75)
 
 def tsurfplot(res=250, mul=1.25):
-        dist=np.sqrt(np.sum((img-lens)**2,axis=0))
-        dist=np.append(np.sqrt(np.sum(Source+lens)**2),dist)
-        lim=np.max(dist)*mul
-        X,Y=np.meshgrid(np.linspace(-lim+lens[0],lim+lens[0],res),np.linspace(-lim+lens[1],lim+lens[1],res))
+       '''Plots arrival time surface gradient and stationary line'''
+       dist=np.sqrt(np.sum((img-lens)**2,axis=0))
+       dist=np.append(np.sqrt(np.sum(Source+lens)**2),dist)
+       lim=np.max(dist)*mul
+       X,Y=np.meshgrid(np.linspace(-lim+lens[0],lim+lens[0],res),np.linspace(-lim+lens[1],lim+lens[1],res))
 
-        Z=np.stack((X.reshape(res*res,1),Y.reshape(res*res,1)),axis=1)
-        Z=np.reshape(Z,(res*res,2)).T
+       Z=np.stack((X.reshape(res*res,1),Y.reshape(res*res,1)),axis=1)
+       Z=np.reshape(Z,(res*res,2)).T
 
-        z=Z-lens
-        fig, ax = plt.subplots(figsize=(10,8))
+       z=Z-lens
+       fig, ax = plt.subplots(figsize=(8,8))
 
-        e1=BX[0]+R0*(z[0]/(np.sqrt(z[0]**2+z[1]**2)))+GE[0]*z[0]+GE[1]*z[1]-z[0]
-        e2=BY[0]+R0*(z[1]/(np.sqrt(z[0]**2+z[1]**2)))-GE[0]*z[1]+GE[1]*z[0]-z[1]
-        e1=np.reshape(e1,(res,res))
-        e2=np.reshape(e2,(res,res))
+       e1=BX[0]+R0*(z[0]/(np.sqrt(z[0]**2+z[1]**2)))+GE[0]*z[0]+GE[1]*z[1]-z[0]
+       e2=BY[0]+R0*(z[1]/(np.sqrt(z[0]**2+z[1]**2)))-GE[0]*z[1]+GE[1]*z[0]-z[1]
+       e1=np.reshape(e1,(res,res)).astype(float)
+       e2=np.reshape(e2,(res,res)).astype(float)
 
-        plt.contourf(X,Y,e2,cmap='BrBG_r',alpha=0.5)
-        plt.contourf(X,Y,e1,cmap='BrBG',alpha=0.5)
-        plt.contour(X,Y,e1+e2,levels=[0],linewidths=.75)
-        plt.plot((img)[0],(img)[1],'xk')
-        plt.plot(lens[0],lens[1],'+k')
+       plt.contourf(X,Y,np.sqrt(e1**2+e2**2),cmap='cividis_r')
+       #plt.contourf(X,Y,e2,cmap='BrBG_r',alpha=0.5)
+       #plt.contourf(X,Y,e1,cmap='BrBG',alpha=0.5)
+       plt.contour(X,Y,e1+e2,levels=[0],linewidths=.75)
+       plt.plot((img)[0],(img)[1],'xk')
+       plt.plot(lens[0],lens[1],'+k')
 
-        plt.gca().invert_xaxis()
-        plt.title(name)
-        for i in range(len(k)):
-                ax.text(img[0,i]*1.2,img[1,i]*1.2, components[i], fontsize=10)
+       plt.gca().invert_xaxis()
+       plt.title(name)
+       for i in range(len(k)):
+              ax.text(img[0,i]*1.2,img[1,i]*1.2, components[i], fontsize=10)
 
-        plt.xlabel('RA [as]')
-        plt.ylabel('Dec [as]')
+       plt.xlabel('RA [as]')
+       plt.ylabel('Dec [as]')
 
 
         
@@ -90,21 +215,21 @@ def lensplot(res=250, mul=1.25):
         '''
         Einstein_radius= plt.Circle((lens[0], lens[1]), R0, fill=0, linewidth=.66, ec='b', ls='-.')     #radial caustic
         
-        fig, ax = plt.subplots(figsize=(10,8))
+        fig, ax = plt.subplots(figsize=(8,8))
 
         #Plotting
         plt.contourf(X,Y,np.log10(np.abs(1/muf)), cmap='gist_gray_r')   #log of absolute magnification background
         imu_0= plt.contour(X,Y,1/muf,levels=[0],colors='r', linewidths=.66)    #1/mu=0 tangential critical line
 
         #Get 1/mu=0 isoline coordinates
-        #imu_x= np.array([])
-        #imu_y= np.array([])
+        imu_x= np.array([])
+        imu_y= np.array([])
 
-        #for i in range(np.shape(imu_0.allsegs[0])[0]):
-                #imu_x=np.append(imu_x, imu_0.allsegs[0][i][:,0])
-                #imu_y=np.append(imu_y, imu_0.allsegs[0][i][:,1])
+        for i in range(np.shape(imu_0.allsegs[0])[0]):
+                imu_x=np.append(imu_x, imu_0.allsegs[0][i][:,0])
+                imu_y=np.append(imu_y, imu_0.allsegs[0][i][:,1])
 
-        #imu=np.vstack((imu_x,imu_y))         
+        imu=np.vstack((imu_x,imu_y))         
 
         #Plotting II: The plot thickens
         ax.add_artist(Einstein_radius)
@@ -125,15 +250,14 @@ def lensplot(res=250, mul=1.25):
         plt.plot(pos[0]+lens[0],pos[1]+lens[1],'+r') #computed images
         plt.plot(Source[0]+lens[0],Source[1]+lens[1],'xb') #computed source
         plt.plot(lens[0],lens[1],'+w',alpha=1) #observed lense
-        plt.legend(('Observed Images','Computed Images','Computed Source','Observed Lense'),frameon=False,ncol=4, loc='best',
-                   bbox_to_anchor=(1,-0.06))
+        plt.legend(('Observed Images','Computed Images','Computed Source','Observed Lens'),frameon=True,ncol=4, loc='best',
+                   bbox_to_anchor=(1,-0.06), fontsize='small', facecolor='#cccccc', edgecolor='#ffffff')
         plt.title(name)
 
         #Reverse critical line to caustic
-        XL=ax.get_xlim()
-        YL=ax.get_ylim()
+        XL=max(ax.get_xlim(),ax.get_ylim())
 
-        #c=Img2SourceRT(sis,imu)
+        c=Img2SourceRT(sis,imu)
         
         #Plotting III: The return of the text
         plt.xlabel('RA [as]')
@@ -145,10 +269,10 @@ def lensplot(res=250, mul=1.25):
                 ax.text(pos[0,i]*1.2+lens[0],pos[1,i]*1.2+lens[1], components[i], fontsize=10,color='y')
                 box=AnchoredText(KGtxt,loc=4,frameon=False)
         #ax.add_artist(box)
-        #plt.plot(c[0]+lens[0],c[1]+lens[1],linewidth=.66,ls='--',color='g')
+        #plt.plot(c[0]+lens[0],c[1]+lens[1],linewidth=.66,ls='--',color='r')
         #plt.plot(-c[0]+lens[0],-c[1]+lens[1],linewidth=.66,ls='--',color='g')
-        plt.xlim(XL)
-        plt.ylim(YL)
+        #plt.xlim(XL)
+        #plt.ylim(YL)
 
         plt.gca().invert_xaxis()
 
@@ -179,6 +303,11 @@ def SISg(img,lens,R0,GE):
         psi[i]=np.array(((1-psi11[i],psi12[i]),(psi12[i],1-psi22[i]))).T
         #mu=1/np.linalg.det(psi)
         return k,g_abs,psi,mu
+def FRatio(mu):
+        '''Calculates model flux ratio and delta to observed flux ratio ONLY DOUBLES FOR NOW'''
+        mmag=-2.5*np.log10(np.abs(mu/mu[0]))
+        return mmag
+        
 
 def Img2SourceRT(sis, coord):
     '''Raytrace from image to source plane. Using SIS+g lens equation'''
@@ -190,8 +319,8 @@ def Img2SourceRT(sis, coord):
     iy=coord[1]
     n=len(ix)
 
-    sx=lambda ix,iy: -GE_X*ix - GE_Y*iy - ix*R0/np.sqrt(ix**2 + iy**2) + ix
-    sy=lambda ix,iy:  GE_X*iy - GE_Y*ix - iy*R0/np.sqrt(ix**2 + iy**2) + iy
+    sx=lambda ix,iy: ix - ix*R0/np.sqrt(ix**2 + iy**2) - GE_X*ix - GE_Y*iy 
+    sy=lambda ix,iy: iy - iy*R0/np.sqrt(ix**2 + iy**2) - GE_Y*ix + GE_X*iy
     
     sCoor=np.zeros((2,n))
     for j in range(n):
@@ -240,10 +369,10 @@ def batch(path):
 
 single=True #controls printout, surpressed if false
 
-print('LENTILS assumes dmag=mag_B-mag_A for calculation.\n\nMagnitude differences are input using mag_A=0 & mag_B=dmag.\ndmag caluclated using the equation in the first line.\n\nIf flux ratios are used convert them to dmag; using dmag=-2.5*log(f_ba)\n\n\n')
+print('LENTILS assumes dmag=mag_B-mag_A for calculation.\n\nMagnitude differences are input using mag_A=0 & mag_B=dmag.\ndmag calculated using the equation in the first line.\n\nIf flux ratios are used convert them to dmag; using dmag=-2.5*log(f_ba)\n\n\n')
 
 try:
-        path=input('Enter filename / path:\n\npress enter for manual data entry\n')
+        path=input('Enter filename / path:\n\nor press enter for manual data entry\n')
         if os.path.isdir(path)==True:
                 files= batch(path)
                 single=False
@@ -268,7 +397,7 @@ except:
 
 def main(parts):
         
-        global name,components,R0,eR0,GE,k,ek,g,eg,anti_div0,no_error,img,lens,Source,eSp,epn,epp,pos,BX,BY,sis,eimg,elens,eGE
+        global name,components,R0,eR0,GE,k,ek,g,eg,anti_div0,no_error,img,lens,Source,eSp,epn,epp,pos,BX,BY,sis,eimg,elens,eGE,mag
 
         name=parts.pop(0)
         Lens= parts.pop(0).split(',')
@@ -467,7 +596,9 @@ if single==True:
 
         if input('\nDo you want a plot with that?\n yes / no\n').lower()[0]=='y':
                 lensplot()
-                #tsurfplot()
+                #tsurfplot() #Pick plot you prefer as default
+                #parasweep() 
+
 
 else:
         print('BATCH Mode!!!')
