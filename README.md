@@ -1,4 +1,4 @@
-# How to use LENTILS
+# Quickstart
 
 LENTILS is run by executing main.py. After execution Python will ask the user for input data, there are three ways
 of entering data:
