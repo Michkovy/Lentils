@@ -39,8 +39,8 @@ In case the entered path leads to a directory LENTILS will produce a
 list of text files within the specified directory and proceed to call
 its ```main()``` function with each file as input. This is essentially an
 automated single file input mode with the printout suppressed. Results
-are saved in the programs root folder in the csv formatted ```results.txt```
-See below for information on the formatinglayout. Note that this feature is still in early alpha.
+are saved in the programs root folder in the csv formatted ```results.txt```.
+Note that this feature is still in early alpha.
 There are no provisions for LENTILS encountering a wrongly formatted
 file and how to deal with such an exception. At the moment LENTILS will
 simply exit batch mode if such a file is encountered. Further
