@@ -100,11 +100,11 @@ for quads it can be safely set to zero in v1.0 since they are only used
 for determining parameters in double lenses.
 
 Since the magnitude difference is the crucial parameter in the computation, either
-apparent magnitude or magnitude differences ($\Delta m$) between the
-images work as input. LENTILS assumes $\Delta m=m_B-m_A$ internally, which means when using only magnitude difference, the right way to enter is $m_A=0$
-and $m_B=\Delta m$, if $\Delta m$ was computed via $\Delta m=m_B-m_A$.
+apparent magnitude or magnitude differences <img src="https://render.githubusercontent.com/render/math?math=$\Delta m$"> between the
+images work as input. LENTILS assumes <img src="https://render.githubusercontent.com/render/math?math=$\Delta m=m_B-m_A$"> internally, which means when using only magnitude difference, the right way to enter is <img src="https://render.githubusercontent.com/render/math?math=$m_A=0$">
+and <img src="https://render.githubusercontent.com/render/math?math=$m_B=\Delta m$">, if <img src="https://render.githubusercontent.com/render/math?math=$\Delta m$"> was computed via <img src="https://render.githubusercontent.com/render/math?math=$\Delta m=m_B-m_A$">.
 Flux ratios must be manually converted to magnitude differences using
-$\Delta m=-2.5log(f_b/f_a)$.
+<img src="https://render.githubusercontent.com/render/math?math=$\Delta m=-2.5log(f_b/f_a)$">.
 
 ```
 A,0,0.11,0,0.01,18.05,.02
