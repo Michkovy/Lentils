@@ -120,7 +120,7 @@ computation after the fourth line is entered.
 B,-0.098,0.006,2.894,.009,18.38,.02
 ```
 
-Lens and image data are then passed to the appropriate SIS+$\gamma$
+Lens and image data are then passed to the appropriate <img src="https://render.githubusercontent.com/render/math?math=$SIS+\gamma$">
 solver, ```Twin2()``` or ```Quad2()``` respectively, which will return:
 
 -   Einstein radius/characteristic scale of the lens R_0
@@ -137,48 +137,3 @@ LENTILS runs only the parameter computation and sets the ```no_error$```
 flag to ```True``` whilst returning the uncertainties as zero. Parameters
 along with their uncertainties are saved internally in the ```sis```
 dictionary.
-
-
-
-
-
-
-
-
-The ```lensplot()``` produces of the macromodel displays, input
-image position as black $\times$, the lens position as a white cross,
-the model derived source position is shown as a blue $\times$, model
-predicted image positions are shown similarly as a red cross. Image
-positions are the solutions to equation
-[\[eq41\]](#eq41){reference-type="ref" reference="eq41"} using the
-computed model parameters. Since double lenses produce an exact result
-the model images are at the same positions as the observed images, while
-quad images show a difference from their observed counterparts. For
-every position with an uncertainty there is also an error ellipse
-centred on its location. The area around the lens is shown in a square
-$2\times125\%$ the size of the largest lens-image separation. Over that
-region LENTILS calculates $\mu$
-(eq.[\[eq27\]](#eq27){reference-type="ref" reference="eq27"}) on
-250$\times$`<!-- -->`{=html}250 grid centred on the lens position. These
-two parameters may be changed if the plot routine is called manually,
-see A.[\[A_lensplot\]](#A_lensplot){reference-type="ref"
-reference="A_lensplot"}, but in practice we've found these values to
-provide a good compromise between speed and smooth contours. The
-background then shows the filled contours of $log(|(1/\mu)|)$ where
-darker areas indicate less magnification. Of particular interest are
-locations where $1/\mu$ is infinite since they imply det$(\hat{A})=0$,
-which by definition is the critical line demarcating the border between
-strong and weak lensing regions. The isopleth det($\hat{A})=0$ is drawn
-as a solid red line. We also plot a stroked blue circle with radius
-$R_0$ centred on the lens position indicating the Einstein radius of the
-lens on the source plane[^1].
-
-While $\kappa$ and $\gamma$ by default are only computed at the image
-position, the SISg (A.[\[A_SISgFunc\]](#A_SISgFunc){reference-type="ref"
-reference="A_SISgFunc"}) routine is capable of taking in an array of
-coordinates so that the parameters may be calculated over the whole
-region. The returned variables are scalar fields for convergence, or
-total shear magnitude, that can be plotted the same way as $\mu$.
-
-[^1]: By convention image plane objects are red with solid stroke,
-    source plane objects are blue and dashed, inputs are black or white
