@@ -133,7 +133,7 @@ input plus/minus uncertainty as the input for the parameter error calculation
 Per convention we assume the upper uncertainty increases
 the parameter value. 
 If **all** input uncertainties are zero,
-LENTILS runs only the parameter computation and sets the ```no_error$```
+LENTILS runs only the parameter computation and sets the ```no_error```
 flag to ```True``` whilst returning the uncertainties as zero. Parameters
 along with their uncertainties are saved internally in the ```sis```
 dictionary.
