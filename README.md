@@ -137,3 +137,7 @@ LENTILS runs only the parameter computation and sets the ```no_error```
 flag to ```True``` whilst returning the uncertainties as zero. Parameters
 along with their uncertainties are saved internally in the ```sis```
 dictionary.
+
+For single and file inputs, the global lens parameters along with convergence and shear at the image positions is displayed in the console. Optionally a plot of the macromodel can be produced. Either answering ```yes``` at the final prompt of a run or by calling ```lensplot()``` manually after the run. This will produce a plot below, where the background shows the magnification according to the model.
+
+![lensplot output](https://github.com/Michkovy/Lentils/blob/main/lenspot_example.png?raw=true)
