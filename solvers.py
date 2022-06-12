@@ -2,6 +2,49 @@ import numpy as np
 import sympy as sp
 import dill
 
+##def QuadE(img, lens):
+##
+##    #Prep###############################################################################
+##    n=4
+##    coord=img-lens
+##    rx=coord[0]
+##    ry=coord[1]
+##    r_abs= np.sqrt(rx**2+ry**2)
+##
+##    r0,ge_x,ge_y,bx,by,phi,f = sp.symbols('r0,ge_x,ge_y,bx,by,phi,f', real=True) #Main symbols
+##
+##    # define functions that will take the role of indexed symbols
+##    x= sp.Function('x')
+##    y= sp.Function('y')
+##    R_abs= sp.Function('R_abs')
+##    i= sp.symbols('i',posititve=True, real=True)
+##
+##    x_fun = lambda index: rx[index-1]
+##    y_fun= lambda index: ry[index-1]
+##    R_abs_fun= lambda index: r_abs[index-1]
+##    #Symbolic##################################################################
+##    s2 = sp.Sum((bx + sp.sqrt(f/(1-f**2))*sp.asinh((sp.sqrt(1-f**2)/f*sp.cos(phi)) + ge_x*x(i) + ge_y*y(i) - x(i))**2+ (by + sp.asin((sp.sqrt(1-f**2)*sp.sin(phi))) - ge_x*y(i) + ge_y*x(i) - y(i))** 2, (i, 1, n)))
+##    
+##    dbx= sp.diff(s2,bx).doit().replace(y,y_fun).replace(x,x_fun)
+##    dby= sp.diff(s2,by).doit().replace(y,y_fun).replace(x,x_fun)
+##    dgx= sp.diff(s2,ge_x).doit().replace(y,y_fun).replace(x,x_fun)
+##    dgy= sp.diff(s2,ge_y).doit().replace(y,y_fun).replace(x,x_fun)
+##    df= sp.diff(s2,f).doit().replace(y,y_fun).replace(x,x_fun)
+##    dphi= sp.diff(s2,phi).doit().replace(y,y_fun).replace(x,x_fun)
+##    sol=sp.solve((dbx,dby,dgx,dgy,dr0),(r0,ge_x,ge_y,bx,by), simplify=True)
+##    
+##    #R0= sol[r0]
+##    #GE_X= sol[ge_x]
+##    #GE_Y= sol[ge_y]
+##    #BX= sol[bx]
+##    #BY= sol[by]
+##
+##    #theta=Source2ImgRT(R0,BX,BY,GE_X,GE_Y,coord)
+##
+##    return sol#, theta
+
+
+
 def Quad2(img, lens):
 
     #Prep###############################################################################
@@ -188,3 +231,204 @@ def Quad(ix,iy,igx,igy):
         print('No theta found with in tolerance')
 
     return sol, theta
+
+def TwinSIS(img, lens):
+
+    #Prep###############################################################################
+    n=2
+    coord=img-lens
+    rx=coord[0]
+    ry=coord[1]
+    r_abs= np.sqrt(rx**2+ry**2)
+
+    r0,bx,by = sp.symbols('r0,bx,by', real=True) #Main symbols
+
+    # define functions that will take the role of indexed symbols
+    x= sp.Function('x')
+    y= sp.Function('y')
+    R_abs= sp.Function('R_abs')
+    i= sp.symbols('i',posititve=True, real=True)
+
+    x_fun = lambda index: rx[index-1]
+    y_fun= lambda index: ry[index-1]
+    R_abs_fun= lambda index: r_abs[index-1]
+    #Symbolic##################################################################
+    s2 = sp.Sum((bx + r0*x(i)/R_abs(i) - x(i))**2 + (by + r0*y(i)/R_abs(i) - y(i))** 2, (i, 1, n))
+
+    dbx= sp.diff(s2,bx).doit().replace(y,y_fun).replace(R_abs,R_abs_fun).replace(x,x_fun)
+    dby= sp.diff(s2,by).doit().replace(y,y_fun).replace(R_abs,R_abs_fun).replace(x,x_fun)
+    dr0= sp.diff(s2,r0).doit().replace(y,y_fun).replace(R_abs,R_abs_fun).replace(x,x_fun)
+    sol=sp.solve((dbx,dby,dr0),(r0,bx,by), simplify=True)
+    
+    #R0= sol[r0]
+    #GE_X= sol[ge_x]
+    #GE_Y= sol[ge_y]
+    #BX= sol[bx]
+    #BY= sol[by]
+
+    #theta=Source2ImgRT(R0,BX,BY,GE_X,GE_Y,coord)
+
+    return sol#, theta
+
+def TwinG(img, lens, R0, bx, by):
+
+    #Prep###############################################################################
+    n=2
+    coord=img-lens
+    rx=coord[0]
+    ry=coord[1]
+    r_abs= np.sqrt(rx**2+ry**2)
+    r0=R0
+    bx=bx
+    by=by
+
+    ge_x,ge_y = sp.symbols('ge_x,ge_y', real=True) #Main symbols
+
+    # define functions that will take the role of indexed symbols
+    x= sp.Function('x')
+    y= sp.Function('y')
+    R_abs= sp.Function('R_abs')
+    i= sp.symbols('i',posititve=True, real=True)
+
+    x_fun = lambda index: rx[index-1]
+    y_fun= lambda index: ry[index-1]
+    R_abs_fun= lambda index: r_abs[index-1]
+    #Symbolic##################################################################
+    s2 = sp.Sum((bx + r0*x(i)/R_abs(i) + ge_x*x(i) + ge_y*y(i) - x(i))**2 + (by + r0*y(i)/R_abs(i) - ge_x*y(i) + ge_y*x(i) - y(i))** 2, (i, 1, n))
+
+    dgx= sp.diff(s2,ge_x).doit().replace(y,y_fun).replace(R_abs,R_abs_fun).replace(x,x_fun)
+    dgy= sp.diff(s2,ge_y).doit().replace(y,y_fun).replace(R_abs,R_abs_fun).replace(x,x_fun)
+    sol=sp.solve((dgx,dgy),(ge_x,ge_y), simplify=True)
+    
+    #R0= sol[r0]
+    #GE_X= sol[ge_x]
+    #GE_Y= sol[ge_y]
+    #BX= sol[bx]
+    #BY= sol[by]
+
+    #theta=Source2ImgRT(R0,BX,BY,GE_X,GE_Y,coord)
+
+    return sol#, theta
+
+def TwinSource(img,lens, R0, gx, gy):
+
+    #Prep###############################################################################
+    n=2
+    coord=img-lens
+    rx=coord[0]
+    ry=coord[1]
+    r_abs= np.sqrt(rx**2+ry**2)
+    r0=R0
+    ge_x=gx
+    ge_y=gy
+
+    bx,by = sp.symbols('bx,by', real=True) #Main symbols
+
+    # define functions that will take the role of indexed symbols
+    x= sp.Function('x')
+    y= sp.Function('y')
+    R_abs= sp.Function('R_abs')
+    i= sp.symbols('i',posititve=True, real=True)
+
+    x_fun = lambda index: rx[index-1]
+    y_fun= lambda index: ry[index-1]
+    R_abs_fun= lambda index: r_abs[index-1]
+    #Symbolic##################################################################
+    s2 = sp.Sum((bx + r0*x(i)/R_abs(i) + ge_x*x(i) + ge_y*y(i) - x(i))**2 + (by + r0*y(i)/R_abs(i) - ge_x*y(i) + ge_y*x(i) - y(i))** 2, (i, 1, n))
+
+    dbx= sp.diff(s2,bx).doit().replace(y,y_fun).replace(R_abs,R_abs_fun).replace(x,x_fun)
+    dby= sp.diff(s2,by).doit().replace(y,y_fun).replace(R_abs,R_abs_fun).replace(x,x_fun)
+    sol=sp.solve((dbx,dby),(bx,by), simplify=True)
+    
+    #R0= sol[r0]
+    #GE_X= sol[ge_x]
+    #GE_Y= sol[ge_y]
+    #BX= sol[bx]
+    #BY= sol[by]
+
+    #theta=Source2ImgRT(R0,BX,BY,GE_X,GE_Y,coord)
+
+    return sol#, theta
+
+def TwinGamma(img,lens, R0, bx, by):
+
+    #Prep###############################################################################
+    n=2
+    coord=img-lens
+    rx=coord[0]
+    ry=coord[1]
+    r_abs= np.sqrt(rx**2+ry**2)
+    r0=R0
+    bx=bx
+    by=by
+    
+
+    ge_x,ge_y = sp.symbols('ge_x,ge_y', real=True) #Main symbols
+
+    # define functions that will take the role of indexed symbols
+    x= sp.Function('x')
+    y= sp.Function('y')
+    R_abs= sp.Function('R_abs')
+    i= sp.symbols('i',posititve=True, real=True)
+
+    x_fun = lambda index: rx[index-1]
+    y_fun= lambda index: ry[index-1]
+    R_abs_fun= lambda index: r_abs[index-1]
+    #Symbolic##################################################################
+    s2 = sp.Sum((bx + r0*x(i)/R_abs(i) + ge_x*x(i) + ge_y*y(i) - x(i))**2 + (by + r0*y(i)/R_abs(i) - ge_x*y(i) + ge_y*x(i) - y(i))** 2, (i, 1, n))
+
+    dgx= sp.diff(s2,ge_x).doit().replace(y,y_fun).replace(R_abs,R_abs_fun).replace(x,x_fun)
+    dgy= sp.diff(s2,ge_y).doit().replace(y,y_fun).replace(R_abs,R_abs_fun).replace(x,x_fun)
+    sol=sp.solve((dgx,dgy),(ge_x,ge_y), simplify=True)
+    
+    #R0= sol[r0]
+    #GE_X= sol[ge_x]
+    #GE_Y= sol[ge_y]
+    #BX= sol[bx]
+    #BY= sol[by]
+
+    #theta=Source2ImgRT(R0,BX,BY,GE_X,GE_Y,coord)
+
+    return sol#, theta
+
+def TwinER(img,lens, bx, by, gx, gy):
+
+
+    #Prep###############################################################################
+    n=2
+    coord=img-lens
+    rx=coord[0]
+    ry=coord[1]
+    r_abs= np.sqrt(rx**2+ry**2)
+    bx=bx
+    by=by
+    ge_x=gx
+    ge_y=gy
+
+
+    r0 = sp.symbols('r0', real=True) #Main symbols
+
+    # define functions that will take the role of indexed symbols
+    x= sp.Function('x')
+    y= sp.Function('y')
+    R_abs= sp.Function('R_abs')
+    i= sp.symbols('i',posititve=True, real=True)
+
+    x_fun = lambda index: rx[index-1]
+    y_fun= lambda index: ry[index-1]
+    R_abs_fun= lambda index: r_abs[index-1]
+    #Symbolic##################################################################
+    s2 = sp.Sum((bx + r0*x(i)/R_abs(i) + ge_x*x(i) + ge_y*y(i) - x(i))**2 + (by + r0*y(i)/R_abs(i) - ge_x*y(i) + ge_y*x(i) - y(i))** 2, (i, 1, n))
+
+    dr0= sp.diff(s2,r0).doit().replace(y,y_fun).replace(R_abs,R_abs_fun).replace(x,x_fun)
+    sol=sp.solve((dr0),(r0), simplify=True)
+    
+    #R0= sol[r0]
+    #GE_X= sol[ge_x]
+    #GE_Y= sol[ge_y]
+    #BX= sol[bx]
+    #BY= sol[by]
+
+    #theta=Source2ImgRT(R0,BX,BY,GE_X,GE_Y,coord)
+
+    return sol#, theta

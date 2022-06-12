@@ -22,6 +22,37 @@ e       uncertainty
 g       lense galaxy
 '''
 
+def TwinDouble(img,lens, eps=1E-6):
+       i=0
+       
+       ö=TwinSIS(img,lens)
+       ä=TwinG(img,lens,ö[r0],ö[bx],ö[by])
+       ö.update(ä)
+       b=np.array([float(ö[bx]),float(ö[by])])
+       g=np.array([float(ö[ge_x]),float(ö[ge_y])])
+
+       
+       for i in range(100):
+              ö.update(TwinSource(img, lens, ö[r0], ö[ge_x], ö[ge_y]))
+              ö.update(TwinGamma(img, lens, ö[r0], ö[bx], ö[by]))
+
+              db=np.all(b[-1]-(float(ö[bx]),float(ö[by]))<eps)
+              dg=np.all(g[-1]-(float(ö[ge_x]),float(ö[ge_y]))<eps)
+
+              if db & dg == True:
+                     break
+
+              b=np.vstack((b,(float(ö[bx]),float(ö[by]))))
+              g=np.vstack((g,(float(ö[ge_x]),float(ö[ge_y]))))
+
+       ö[r0]=TwinER(img,lens, ö[bx],ö[by],ö[ge_x],ö[ge_y])
+       
+       return ö
+       #Experimental Double solver using only image positions(?)
+
+
+
+       
 def parasweep(mode='g'):
        '''Creates a 3D plot showing the variation of parameters as lens/image and magnitude changes.
        Mag range -5 to 5 difference mag_B - mag_A
@@ -530,7 +561,7 @@ def main(parts):
             
         else:
             if len(ix)==2:
-                t2=Twin(img,lens,mag)
+                t2=Twin2(img,lens,mag)
 
                 sis={}
                 for i in range(len(keys)):
